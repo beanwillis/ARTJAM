@@ -16,7 +16,7 @@ from os import environ
 app = Flask(__name__)
 
 # db settings
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
+app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('dbURL')
 
 # Binds the database with this specific Flask application
 db = SQLAlchemy(app)
