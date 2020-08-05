@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ARTJAM - {% block title %} {% endblock %}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <a class="navbar-item" href="0.0.0.0:5000/home">
+        <!-- <img src="<home icon link here>" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        Home
+      </a>
+      <a class="navbar-item" href="0.0.0.0:5000/map">
+        <!-- <img src="<home icon link here>" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        Map
+      </a>
+    </nav>
+
+    {% block content %} {% endblock %}
+
+    <!-- <footer>
+    <p><a href="https://lcsi.smu.edu.sg/">Lien Centre for Social Innovation</a></p>
+  </footer> -->
+  </body>
+
+  {% block scripts %} {% endblock %}
+</html>
