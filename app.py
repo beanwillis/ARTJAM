@@ -12,6 +12,14 @@ def about():
 def map():
     return render_template("map.html")
 
+@app.route("/books")
+def books():
+    return render_template("books.html")
+
+@app.route("/avatar")
+def avatar():
+    return render_template("avatar.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 

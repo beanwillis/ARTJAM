@@ -1,0 +1,6 @@
+for the jinjja templates
+
+	static folder is to put img, css files
+	templates folder is to put html file, in app.py u just need to specify the html filename, no need to indicate templates folder, because it's render (see the import render_template).
+	templates contains layout.html which i created as a barebone (header/footer that's would be the same for all screens).
+	then when u look at home.html, it extends layout.html, and customise the content block
