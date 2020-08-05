@@ -1,0 +1,15 @@
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-bottom: 15px !important;
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
