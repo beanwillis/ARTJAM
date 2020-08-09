@@ -1,3 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}Avatar Selection{% endblock %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +12,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 </head>
+
+<script>
+
+    $(async() => {
+        var response = await fetch("http://localhost:5001/get_all_books")
+        var data = await response.json();
+        var books = data["books"]
+
+        books.forEach(book => {
+            var row = '<a href='+ book['link'] + ' style="color: black !important;">' + 
+                        '<div class="card" style="overflow: auto">' + 
+                        '<div class="row no-gutters">' +
+                            '<div class="col-auto">' + 
+                                '<img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png" class="img-fluid" alt="">' + 
+                            '</div><div class="col">' + 
+                                '<div class="card-block px-3">' + 
+                                    '<h5 class="card-title">' + book["title"] + '</h5>' + 
+                                    '<p class="card-subtitle">' + book["author"] + '</p>' 
+                        '</div></div></div></div></a>'
+
+            $("#book-list").append(row);
+        });
+    });
+
+</script>
 
 <body>
 
@@ -22,98 +55,13 @@
         <br>
 
         <div class="row">
-            <div class="col">
-
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Book Title</h4>
-                                <p class="card-text">Book Description will be here. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Book Title</h4>
-                                <p class="card-text">Book Description will be here. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Book Title</h4>
-                                <p class="card-text">Book Description will be here. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Book Title</h4>
-                                <p class="card-text">Book Description will be here. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-auto">
-                            <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="card-block px-3">
-                                <h4 class="card-title">Book Title</h4>
-                                <p class="card-text">Book Description will be here. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col" id="book-list">
             </div>
         </div>
 
     </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -123,3 +71,10 @@
 </body>
 
 </html>
+
+{% endblock %}
+
+{% block scripts %}
+
+
+{% endblock %}

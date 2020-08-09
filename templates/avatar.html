@@ -1,3 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}Avatar Selection{% endblock %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,63 +30,95 @@
         </div>
 
         <div class="row">
-            <div class="col" align="center">
+            <div class="col-10 padding-0" align="center" id="image-choice">
+                <script>
+                    $(function() {
+                        $("#skin-tones").bind("focusin", function() {
+                            var focused_btn = $(":focus")
+                            console.log(focused_btn)
+                        })
+                    });
+
+                    $(function() {
+                        $("#avatars").bind("focusin", function() {
+                            var focused_btn = $(":focus")
+                            $("#image-choice").find("img")[0].src = focused_btn.find("img")[0].src
+                        })
+                    });
+
+                </script>
                 <img width="170px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+            </div>
+            <div class="col" id="skin-tones">
+                <button id="skintone-1">
+                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+                </button>
+                <button id="skintone-2">
+                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+                </button>
+                <button id="skintone-3">
+                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+                </button>
+                <button id="skintone-4">
+                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+                </button>
             </div>
         </div>
         <br>
 
-        <div class="row avatar-row">
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
+        <div id="avatars">
+            <div class="row avatar-row">
+                <div class="col padding-0" align="center">
+                    <button id="avatar-1">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-2">
+                        <img width="100px" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_female_woman_avatar-512.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-3">
+                        <img width="100px" src="https://cdn.icon-icons.com/icons2/1736/PNG/512/4043260-avatar-male-man-portrait_113269.png">
+                    </button>
+                </div>
             </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
+    
+            <div class="row avatar-row">
+                <div class="col padding-0" align="center">
+                    <button id="avatar-4">
+                        <img width="100px" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-512.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-5">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-6">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
             </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-        </div>
-
-        <div class="row avatar-row">
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-        </div>
-
-        <div class="row avatar-row">
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
-            </div>
-            <div class="col padding-0" align="center">
-                <button>
-                    <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                </button>
+    
+            <div class="row avatar-row">
+                <div class="col padding-0" align="center">
+                    <button id="avatar-7">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-8">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
+                <div class="col padding-0" align="center">
+                    <button id="avatar-9">
+                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -89,10 +130,6 @@
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -102,3 +139,10 @@
 </body>
 
 </html>
+
+{% endblock %}
+
+{% block scripts %}
+
+
+{% endblock %}

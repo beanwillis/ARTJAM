@@ -14,12 +14,21 @@ button {
     border: none;
 }
 
+button:focus, button:active {
+    border: none !important;
+    outline: 0 !important;
+}
+
+.selected-image {
+    border: 5px black solid;
+}
+
 .center {
     margin:auto;
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .card-img {
@@ -34,4 +43,14 @@ button {
 
 .card-title {
     margin-top: 5px;
+}
+
+#skin-tones {
+    margin-left: -40px;
+}
+
+#skin-tones img {
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
