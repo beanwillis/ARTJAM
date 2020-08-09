@@ -16,7 +16,8 @@ from os import environ
 app = Flask(__name__)
 
 # db settings
-app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('dbURL')
+# app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('dbURL')
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
 
 # Binds the database with this specific Flask application
 db = SQLAlchemy(app)
@@ -27,7 +28,7 @@ CORS(app)
 
 class FinalPersona(db.Model):
     """
-    A class used to represent the InterimPersona database
+    A class used to represent the FinalPersona database
 
     Attributes
     ----------
@@ -39,7 +40,7 @@ class FinalPersona(db.Model):
         Returns a JSON object that represents a row within the database 
     """
 
-    __tablename__ = 'interimpersona'
+    __tablename__ = 'finalpersona'
 
     interimPersona = db.Column(db.String(250), nullable=False, primary_key=True)
     likeTo = db.Column(db.String(250), nullable=False, primary_key=True)
@@ -69,7 +70,7 @@ class FinalPersona(db.Model):
 
         Parameters
         ----------
-        self (Appointment object)
+        self
             An instance of itself to convert into json
 
         """
@@ -96,6 +97,20 @@ def get_all_final_personas():
     except Exception as e:
         print(e)
         return {"error": "Cannot retrieve final personas"}, 500
+
+@app.route("/get_all_books")
+def get_all_books():
+    try:
+        query = db.session.query(FinalPersona.books.distinct())
+        
+        return {
+            'books': [
+                FinalPersona[0] for FinalPersona in query.all()
+            ]
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error" : "Cannot retrieve books"}, 500
 
 
 if __name__ == '__main__':

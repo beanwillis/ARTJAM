@@ -16,7 +16,7 @@ from os import environ
 app = Flask(__name__)
 
 # db settings
-app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('dbURL')
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
 
 # Binds the database with this specific Flask application
 db = SQLAlchemy(app)
@@ -66,7 +66,7 @@ class InterimPersona(db.Model):
 
         Parameters
         ----------
-        self (Appointment object)
+        self 
             An instance of itself to convert into json
 
         """
@@ -91,6 +91,20 @@ def get_all_interim_personas():
     except Exception as e:
         print(e)
         return {"error" : "Cannot retrieve interim personas"}, 500
+
+@app.route("/get_all_skills")
+def get_all_skills():
+    try:
+        query = db.session.query(InterimPersona.skills.distinct())
+        
+        return {
+            'skills': [
+                InterimPersona[0] for InterimPersona in query.all()
+            ]
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error" : "Cannot retrieve skills"}, 500
 
 
 if __name__ == '__main__':
