@@ -8,9 +8,6 @@ CORS(app)
 def about():
     return render_template("home.html")
 
-@app.route("/map")
-def map():
-    return render_template("map.html")
 
 @app.route("/books")
 def books():

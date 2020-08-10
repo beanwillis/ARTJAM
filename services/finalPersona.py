@@ -1,23 +1,14 @@
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
-from flask import Flask, request, jsonify
 from flask_cors import CORS
-
-from datetime import datetime
-from dateutil import tz
-import random
-import requests
-import json
-import pika
-import uuid
-import sys
 from os import environ
+import json
 
-# Creating the flask application
 app = Flask(__name__)
 
 # db settings
 # app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('dbURL')
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
 
 # Binds the database with this specific Flask application
 db = SQLAlchemy(app)
@@ -27,19 +18,6 @@ CORS(app)
 
 
 class FinalPersona(db.Model):
-    """
-    A class used to represent the FinalPersona database
-
-    Attributes
-    ----------
-
-
-    Methods
-    -------
-    json(self)
-        Returns a JSON object that represents a row within the database 
-    """
-
     __tablename__ = 'finalpersona'
 
     interimPersona = db.Column(db.String(250), nullable=False, primary_key=True)
@@ -51,11 +29,6 @@ class FinalPersona(db.Model):
     books = db.Column(db.String(250), nullable=False)
 
     def __init__(self, interimPersona, likeTo, finalPersona, description, quotes, persona):
-        """
-        Parameters
-        ----------
-
-        """
         self.interimPersona = interimPersona
         self.likeTo = likeTo
         self.finalPersona = finalPersona
@@ -65,16 +38,6 @@ class FinalPersona(db.Model):
         self.books = books
 
     def json(self):
-        """
-        Returns itself as a JSON object 
-
-        Parameters
-        ----------
-        self
-            An instance of itself to convert into json
-
-        """
-
         return {
             "interimPersona": self.interimPersona,
             "likeTo": self.likeTo,
@@ -85,6 +48,9 @@ class FinalPersona(db.Model):
             "books": self.books
         }
 
+@app.route("/everything")
+def get_all():
+    return {"persona": [persona.json() for persona in FinalPersona.query.all()]}
 
 @app.route("/get_all_final_personas")
 def get_all_final_personas():
@@ -114,4 +80,4 @@ def get_all_books():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5002, debug=True)
