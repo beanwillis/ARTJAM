@@ -16,7 +16,7 @@ from os import environ
 app = Flask(__name__)
 
 # db settings
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://admin:jyZhA8uVKSU3rKNv9JhZ@artjam-db.ca7jlm5dqrku.ap-southeast-1.rds.amazonaws.com/artjam-db"
 
 # Binds the database with this specific Flask application
 db = SQLAlchemy(app)
@@ -106,6 +106,33 @@ def get_all_skills():
         print(e)
         return {"error" : "Cannot retrieve skills"}, 500
 
+@app.route("/get_all_home_activities")
+def get_all_home_activities():
+    try:
+        query = db.session.query(InterimPersona.activities.distinct())
+        
+        return {
+            'home-activities': [
+                InterimPersona[0] for InterimPersona in query.all()
+            ]
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error" : "Cannot retrieve home activities"}, 500
+
+@app.route("/get_home_activities_by_wheel/<string:issue>/<string:skill>/<string:interest>")
+def get_home_activities_by_wheel(issue, skill, interest):
+    data = InterimPersona.query.filter_by(issues=issue, skills=skill, interests=interest).first()
+    if data:
+        return {"homeActivities": data.activities, "status": 200}
+    return jsonify({"message": "activity not found based on issue, skill and interest"}), 404
+
+@app.route("/get_campus_activities_by_wheel/<string:issue>/<string:skill>/<string:interest>")
+def get_campus_activities_by_wheel(issue, skill, interest):
+    data = InterimPersona.query.filter_by(issues=issue, skills=skill, interests=interest).first()
+    if data:
+        return {"schoolActivities": data.schoolActivities, "status": 200}
+    return jsonify({"message": "school activity not found based on issue, skill and interest"}), 404
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

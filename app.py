@@ -17,6 +17,14 @@ def books():
 def avatar():
     return render_template("avatar.html")
 
+@app.route("/home-activities")
+def homeActivities():
+    return render_template("activities-at-home.html")
+
+@app.route("/campus-activities")
+def campusActivities():
+    return render_template("activities-at-campus.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 

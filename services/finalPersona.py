@@ -48,11 +48,8 @@ class FinalPersona(db.Model):
             "books": self.books
         }
 
-@app.route("/everything")
-def get_all():
-    return {"persona": [persona.json() for persona in FinalPersona.query.all()]}
-
 @app.route("/get_all_final_personas")
+# localhost:5002/get_all_final_personas
 def get_all_final_personas():
     try:
         return {
