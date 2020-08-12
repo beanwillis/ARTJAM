@@ -8,9 +8,18 @@
         <img class="card-img img-fluid" src="/static/img/campus-green.jpg" alt="Campus Green">
     </div>
 
-    <ul class="list-group list-group-flush" id="activities">
-    </ul>
+    <div>
+      <ul class="list-group list-group-flush" id="activities">
+      </ul>
+    </div>
 
+    <div class="text-left">
+      <a href="/home-activities">Back</a>
+    </div>
+    
+    <div class="text-right">
+      <a href="/campus-activities">Next</a>
+    </div>
 </div>
 
 
@@ -42,7 +51,6 @@
           elem = "<li class='list-group-item'>" + activity + "</li>"
           listElem += elem;
         }
-
 
         document.getElementById("activities").innerHTML = listElem;
 

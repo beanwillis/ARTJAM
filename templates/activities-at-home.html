@@ -7,14 +7,17 @@
     <div class="card text-black bg-transparent text-center">
         <img class="card-img img-fluid" src="/static/img/living-room.jpg" alt="Living Room">
     </div>
+    <div>
+      <ul class="list-group list-group-flush" id="activities">
+      </ul>
+    </div>
 
-    <ul class="list-group list-group-flush" id="activities">
-    </ul>
 
+    <div class="text-right">
+
+      <a href="/campus-activities">Next</a>
+    </div>
 </div>
-
-
-
 
 {% endblock %}
 
@@ -22,9 +25,9 @@
 <script>
     async function displayHomeActivities() {
     // TODO: create session to store issue, skill, interest from wheel screen
-    var issue = "Education And Mobility"
-    var skill = "Tech"
-    var interest = "Health"
+    var issue = "Equality Diversity"
+    var skill = "Creative"
+    var interest = "Personal Development"
 
     let interimPersonaURL = "http://localhost:5001/get_home_activities_by_wheel/" + issue + "/" + skill + "/" + interest;
     try {

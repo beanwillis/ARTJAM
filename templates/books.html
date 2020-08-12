@@ -15,7 +15,7 @@
 <script>
 
     $(async() => {
-        var response = await fetch("http://localhost:5001/get_all_books")
+        var response = await fetch("http://localhost:5003/get_all_books")
         var data = await response.json();
         var books = data["books"]
 
