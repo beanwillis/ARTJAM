@@ -38,7 +38,7 @@ class InterimPersona(db.Model):
         Returns a JSON object that represents a row within the database 
     """
 
-    __tablename__ = 'interimPersonas2'
+    __tablename__ = 'interimpersona'
 
     issues = db.Column(db.String(250), nullable=False, primary_key=True)
     skills = db.Column(db.String(250), nullable=False, primary_key=True)
@@ -133,13 +133,6 @@ def get_campus_activities_by_wheel(issue, skill, interest):
     if data:
         return {"schoolActivities": data.schoolActivities, "status": 200}
     return jsonify({"message": "school activity not found based on issue, skill and interest"}), 404
-
-@app.route("/get_home_activities_by_wheel/<string:issue>/<string:skill>/<string:interest>")
-def get_home_activities_by_wheel(issue, skill, interest):
-    data = InterimPersona.query.filter_by(issues=issue, skills=skill, interests=interest).first()
-    if data:
-        return {"homeActivities": data.activities, "status": 200}
-    return jsonify({"message": "activity not found based on issue, skill and interest"}), 404
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)
