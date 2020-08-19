@@ -1,60 +1,3 @@
-.padding-0 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.avatar-row {
-    margin-bottom: 15px !important;
-    width: 90%;
-    margin: auto;
-}
-
-button {
-    background-color: transparent;
-    border: none;
-}
-
-button:focus, button:active {
-    border: none !important;
-    outline: 0 !important;
-}
-
-.selected-image {
-    border: 5px black solid;
-}
-
-.center {
-    margin:auto;
-}
-
-.card {
-    margin-bottom: 40px;
-}
-
-.card-img {
-    width: 100px;
-}
-
-.img-fluid {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-title {
-    margin-top: 5px;
-}
-
-#skin-tones {
-    margin-left: -40px;
-}
-
-#skin-tones img {
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-
 .text-light-green {
     color: #25b5ac
 }
@@ -69,6 +12,7 @@ button:focus, button:active {
 .bg-light-green {
     background-color: #25b5ac;
 }
+
 .btn-circle.btn-sm { 
     background-color: #0f726a;
     width: 70px; 
