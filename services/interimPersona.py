@@ -25,18 +25,6 @@ db = SQLAlchemy(app)
 CORS(app)
 
 class InterimPersona(db.Model):
-    """
-    A class used to represent the InterimPersona database
-
-    Attributes
-    ----------
-
-
-    Methods
-    -------
-    json(self)
-        Returns a JSON object that represents a row within the database 
-    """
 
     __tablename__ = 'interimpersona'
 
@@ -61,15 +49,7 @@ class InterimPersona(db.Model):
         self.persona = persona
 
     def json(self):
-        """
-        Returns itself as a JSON object 
 
-        Parameters
-        ----------
-        self 
-            An instance of itself to convert into json
-
-        """
 
         return {
             "issues" : self.issues,
