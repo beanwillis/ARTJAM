@@ -54,3 +54,27 @@ button:focus, button:active {
     margin-left: 5px;
     margin-bottom: 5px;
 }
+
+.text-light-green {
+    color: #25b5ac
+}
+.text-dark-green {
+    color: #0b3c3a
+}
+
+.bg-dark-green {
+    background-color: #0b3c3a;
+}
+
+.bg-light-green {
+    background-color: #25b5ac;
+}
+.btn-circle.btn-sm { 
+    background-color: #0f726a;
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 12px; 
+    text-align: center;
+} 
