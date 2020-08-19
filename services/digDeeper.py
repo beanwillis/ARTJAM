@@ -27,9 +27,9 @@ CORS(app)
 class DigDeeperDesc(db.Model):
     __tablename__ = 'digdeeperDesc'
 
-    iLikeTo = db.Column(db.String(250), nullable=False, primary_key=True)
-    shortDesc = db.Column(db.String(250), nullable=False)
-    longDesc = db.Column(db.String(250), nullable=False)
+    iLikeTo = db.Column(db.String(200), nullable=False, primary_key=True)
+    shortDesc = db.Column(db.String(100), nullable=False)
+    longDesc = db.Column(db.String(500), nullable=False)
 
 
     def __init__(self, iLikeTo, shortDesc, longDesc):
