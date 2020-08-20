@@ -22,3 +22,14 @@
     font-size: 12px; 
     text-align: center;
 } 
+
+.btn {
+    white-space: normal;
+}
+
+.jumbotron{
+    background-image: url("/static/img/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
