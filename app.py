@@ -25,6 +25,10 @@ def homeActivities():
 def campusActivities():
     return render_template("activities-at-campus.html")
 
+@app.route("/nav")
+def nav():
+    return render_template("navbar.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 
