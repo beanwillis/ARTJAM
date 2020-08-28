@@ -1,0 +1,272 @@
+[
+  {
+    "interimPersona": "Business",
+    "likeTo": "I like to set goals and directions",
+    "finalPersona": "Business Leader",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "Be sure you put your feet in the right place. \nThen stand firm.\" -- Abraham Lincoln,“Set your sights high, the higher the better. Expect the most wonderful things to happen, not in the future but right now. Realize that nothing is too good. Allow absolutely nothing to hamper you or hold you up in any way.” -- Jack Ma",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Business",
+    "likeTo": "I like to generate solutions to problems",
+    "finalPersona": "Business Developer",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "In the middle of every difficulty lies opportunity\" \n-- Albert Einstein,“Let us remember: one book, one pen, one child, and one teacher can change the world.” —Malala Yousafzai",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Business",
+    "likeTo": "I Like to think about how to deliver solutions to more people",
+    "finalPersona": "Communicator",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "If we are going to be part of the solution, we have to engage the problems.\" – Majora Carter,\"Do not limit yourself to thinking in the present. Think above and beyond. Do not be bound by this age; aim to create a new age that will delight people throughout the world.\" -- Masayoshi Son",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Business",
+    "likeTo": "I like to think about risks and opportunities of possible solutions",
+    "finalPersona": "Strategic analyst",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "I learned to make my mind large, as the universe is large, \nso that there is room for paradoxes\" \n--Maxine Hong Kingston,“Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.” -- Gloria Steinem",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Business",
+    "likeTo": "I like to create things that improve lives",
+    "finalPersona": "Creative businessperson",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "For me, to live is about impacting people’s lives.\" -- Elim Chew,“Stick to your true north― build greatness for the long term.”―Ruth Porat",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Business",
+    "likeTo": "I like to make information accessible",
+    "finalPersona": "Communicator",
+    "description": "You are a robust leader. You have a vision and are driven in realizing your dreams. You enjoy setting the directions right for any given task and charting the path forward for action.",
+    "quotes": "The goal is to turn data into information, \nand information into insight.\" -- Carly Florina,“Your value will be not what you know; it will be what you share.”― Ginni Rometty",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I like to set goals and directions",
+    "finalPersona": "Social Activist",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "Be sure you put your feet in the right place. \nThen stand firm.\" -- Abraham Lincoln,“Set your sights high, the higher the better. Expect the most wonderful things to happen, not in the future but right now. Realize that nothing is too good. Allow absolutely nothing to hamper you or hold you up in any way.” -- Jack Ma",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I like to generate solutions to problems",
+    "finalPersona": "Politician",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "In the middle of every difficulty lies opportunity\" \n-- Albert Einstein,“Let us remember: one book, one pen, one child, and one teacher can change the world.” —Malala Yousafzai",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I Like to think about how to deliver solutions to more people",
+    "finalPersona": "Social volunteer",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "If we are going to be part of the solution, we have to engage the problems.\" – Majora Carter,\"Do not limit yourself to thinking in the present. Think above and beyond. Do not be bound by this age; aim to create a new age that will delight people throughout the world.\" -- Masayoshi Son",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I like to think about risks and opportunities of possible solutions",
+    "finalPersona": "Social Entrepreneur",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "I learned to make my mind large, as the universe is large, \nso that there is room for paradoxes\" \n--Maxine Hong Kingston,“Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.” -- Gloria Steinem",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I like to create things that improve lives",
+    "finalPersona": "Product Designer",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "For me, to live is about impacting people’s lives.\" -- Elim Chew,“Stick to your true north― build greatness for the long term.”―Ruth Porat",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Social",
+    "likeTo": "I like to make information accessible",
+    "finalPersona": "Social Media Influencer",
+    "description": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "quotes": "The goal is to turn data into information, \nand information into insight.\" -- Carly Florina,“Your value will be not what you know; it will be what you share.”― Ginni Rometty",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to set goals and directions",
+    "finalPersona": "Manager",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "Be sure you put your feet in the right place. \nThen stand firm.\" -- Abraham Lincoln,“Set your sights high, the higher the better. Expect the most wonderful things to happen, not in the future but right now. Realize that nothing is too good. Allow absolutely nothing to hamper you or hold you up in any way.” -- Jack Ma",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to generate solutions to problems",
+    "finalPersona": "Designer",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "In the middle of every difficulty lies opportunity\" \n-- Albert Einstein,“Let us remember: one book, one pen, one child, and one teacher can change the world.” —Malala Yousafzai",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I Like to think about how to deliver solutions to more people",
+    "finalPersona": "Marketing Executive",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "If we are going to be part of the solution, we have to engage the problems.\" – Majora Carter,\"Do not limit yourself to thinking in the present. Think above and beyond. Do not be bound by this age; aim to create a new age that will delight people throughout the world.\" -- Masayoshi Son",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to think about risks and opportunities of possible solutions",
+    "finalPersona": "Market analyst",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "I learned to make my mind large, as the universe is large, \nso that there is room for paradoxes\" \n--Maxine Hong Kingston,“Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.” -- Gloria Steinem",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to create things that improve lives",
+    "finalPersona": "Artist",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "For me, to live is about impacting people’s lives.\" -- Elim Chew,“Stick to your true north― build greatness for the long term.”―Ruth Porat",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to make information accessible",
+    "finalPersona": "Graphic designer",
+    "description": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "quotes": "The goal is to turn data into information, \nand information into insight.\" -- Carly Florina,“Your value will be not what you know; it will be what you share.”― Ginni Rometty",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Creative",
+    "likeTo": "I like to set goals and directions",
+    "finalPersona": "Screenwriter",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "Be sure you put your feet in the right place. \nThen stand firm.\" -- Abraham Lincoln,“Set your sights high, the higher the better. Expect the most wonderful things to happen, not in the future but right now. Realize that nothing is too good. Allow absolutely nothing to hamper you or hold you up in any way.” -- Jack Ma",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Tech",
+    "likeTo": "I like to generate solutions to problems",
+    "finalPersona": "App Devloper",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "In the middle of every difficulty lies opportunity\" \n-- Albert Einstein,“Let us remember: one book, one pen, one child, and one teacher can change the world.” —Malala Yousafzai",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Tech",
+    "likeTo": "I Like to think about how to deliver solutions to more people",
+    "finalPersona": "AI Engineer",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "If we are going to be part of the solution, we have to engage the problems.\" – Majora Carter,\"Do not limit yourself to thinking in the present. Think above and beyond. Do not be bound by this age; aim to create a new age that will delight people throughout the world.\" -- Masayoshi Son",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Tech",
+    "likeTo": "I like to think about risks and opportunities of possible solutions",
+    "finalPersona": "Risk Analyst",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "I learned to make my mind large, as the universe is large, \nso that there is room for paradoxes\" \n--Maxine Hong Kingston,“Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.” -- Gloria Steinem",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Tech",
+    "likeTo": "I like to create things that improve lives",
+    "finalPersona": "UX/UI",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "For me, to live is about impacting people’s lives.\" -- Elim Chew,“Stick to your true north― build greatness for the long term.”―Ruth Porat",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Tech",
+    "likeTo": "I like to make information accessible",
+    "finalPersona": "UX/UI",
+    "description": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "quotes": "The goal is to turn data into information, \nand information into insight.\" -- Carly Florina,“Your value will be not what you know; it will be what you share.”― Ginni Rometty",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I like to set goals and directions",
+    "finalPersona": "CEO",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "Be sure you put your feet in the right place. \nThen stand firm.\" -- Abraham Lincoln,“Set your sights high, the higher the better. Expect the most wonderful things to happen, not in the future but right now. Realize that nothing is too good. Allow absolutely nothing to hamper you or hold you up in any way.” -- Jack Ma",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I like to generate solutions to problems",
+    "finalPersona": "Management Consultant",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "In the middle of every difficulty lies opportunity\" \n-- Albert Einstein,“Let us remember: one book, one pen, one child, and one teacher can change the world.” —Malala Yousafzai",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I Like to think about how to deliver solutions to more people",
+    "finalPersona": "COO",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "If we are going to be part of the solution, we have to engage the problems.\" – Majora Carter,\"Do not limit yourself to thinking in the present. Think above and beyond. Do not be bound by this age; aim to create a new age that will delight people throughout the world.\" -- Masayoshi Son",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I like to think about risks and opportunities of possible solutions",
+    "finalPersona": "Economist",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "I learned to make my mind large, as the universe is large, \nso that there is room for paradoxes\" \n--Maxine Hong Kingston,“Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.” -- Gloria Steinem",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I like to create things that improve lives",
+    "finalPersona": "Social Entrepreneur",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "For me, to live is about impacting people’s lives.\" -- Elim Chew,“Stick to your true north― build greatness for the long term.”―Ruth Porat",
+    "skills": "",
+    "books": ""
+  },
+  {
+    "interimPersona": "Leadership",
+    "likeTo": "I like to make information accessible",
+    "finalPersona": "Motivational Speaker/Coach",
+    "description": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "quotes": "The goal is to turn data into information, \nand information into insight.\" -- Carly Florina,“Your value will be not what you know; it will be what you share.”― Ginni Rometty",
+    "skills": "",
+    "books": ""
+  }
+]
