@@ -1,56 +1,35 @@
-.padding-0 {
-    padding-left: 0;
-    padding-right: 0;
+.text-light-green {
+    color: #25b5ac
+}
+.text-dark-green {
+    color: #0b3c3a
 }
 
-.avatar-row {
-    margin-bottom: 15px !important;
-    width: 90%;
-    margin: auto;
+.bg-dark-green {
+    background-color: #0b3c3a;
 }
 
-button {
-    background-color: transparent;
-    border: none;
+.bg-light-green {
+    background-color: #25b5ac;
 }
 
-button:focus, button:active {
-    border: none !important;
-    outline: 0 !important;
+.btn-circle.btn-sm { 
+    background-color: #0f726a;
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 12px; 
+    text-align: center;
+} 
+
+.btn {
+    white-space: normal;
 }
 
-.selected-image {
-    border: 5px black solid;
-}
-
-.center {
-    margin:auto;
-}
-
-.card {
-    margin-bottom: 40px;
-}
-
-.card-img {
-    width: 100px;
-}
-
-.img-fluid {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-title {
-    margin-top: 5px;
-}
-
-#skin-tones {
-    margin-left: -40px;
-}
-
-#skin-tones img {
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
+.jumbotron{
+    background-image: url("/static/img/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 

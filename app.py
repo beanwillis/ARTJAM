@@ -8,6 +8,9 @@ CORS(app)
 def about():
     return render_template("home.html")
 
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome.html")
 
 @app.route("/books")
 def books():
@@ -25,9 +28,9 @@ def homeActivities():
 def campusActivities():
     return render_template("activities-at-campus.html")
 
-@app.route("/nav")
-def nav():
-    return render_template("navbar.html")
+@app.route("/digging-deeper")
+def diggingDeeper():
+    return render_template("digging-deeper.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

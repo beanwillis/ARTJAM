@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>ARTJAM - {% block title %} {% endblock %}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>ARTJAM - {% block title %} {% endblock %}</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block style %} {% endblock %}
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../static/css/style.css">
-</head>
+  <body>
+    <nav class="navbar navbar bg-dark-green">
+      <a class="navbar-item" href="/home">
+        <!-- <img src="<home icon link here>" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+          <button type="button" class="btn border text-white bg-dark-green font-weight-bold">Home</button>
+          
+          <button type="button" class="btn border text-white bg-dark-green font-weight-bold">Skills</button>
 
-<body>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-item" href="/home">
-      <!-- <img src="<home icon link here>" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-      Home
-    </a>
-  </nav>
 
-  {% block content %} {% endblock %}
+      </a>
+      <a class="navbar-item" href="/books">
+        <button type="button" class="btn font-weight-bold">Books</button>
+      
+      </a>
+    </nav>
 
-  <!-- <footer>
+    {% block content %} {% endblock %}
+
+    <!-- <footer>
     <p><a href="https://lcsi.smu.edu.sg/">Lien Centre for Social Innovation</a></p>
   </footer> -->
 </body>
