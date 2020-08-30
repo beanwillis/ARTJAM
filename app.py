@@ -12,6 +12,10 @@ def about():
 def welcome():
     return render_template("welcome.html")
 
+@app.route("/name")
+def name():
+    return render_template("name.html")
+
 @app.route("/books")
 def books():
     return render_template("books.html")

@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/style.css">
     
-    <title>Loading</title>
-    <!-- <style>
+    <title>Welcome</title>
+    <style>
       body{
         /* Location of the image */
-        background-image: url(/static/img/home-bg.jpg);
+        background-image: url(/static/img/welcome-bg.svg);
     
         /* Image is centered vertically and horizontally at all times */
-        background-position: center center;
+        background-position: top center;
     
         /* Image doesn't repeat */
         background-repeat: no-repeat;
@@ -31,69 +31,51 @@
         /* Pick a solid background color that will be displayed while the background image is loading */
         background-color: white;
     
-        height: 100%;
-        margin: 0;
+        height: 300%;
       }
     
-    </style> -->
+    </style>
   </head>
   
   <body>
-    <div class="jumbotron">
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <br><br><br><br>
-        <div class="text-center">
-          <h3 class="text-white">WELCOME TO</h3>
-          <h4 class="font-italic text-light-green">YOUR<br>CHANGEMAKING<br>JOURNEY</h4>
+        <div class="row text-center">
+          <div class="col">
+            <h1 class="text-dark-green font-weight-bold">Be the change you want to see</h1>
+            <h4 class="text-dark-green">- Mahatma Gandhi</h4>
+          </div>
         </div>
-        <br><br><br><br><br><br><br>
-        <div class="text-left">
-          <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"">
-              <h5 class="font-weight-bold text-dark-green">
-                BE THE 
-                CHANGE 
-                YOU WANT
-                TO SEE
-
-              </h5>
-              <h6 class="text-dark-green font-weight-bold">Mahatma Ghandi</p>
-              </div>       
+        <br><br><br><br><br><br><br><br>
+          
+          <div class="row text-center" >
+            <div class="col">
+              <button class="btn-shadow btn btn-primary font-weight-bold bg-orange" style="padding: 20px 25px;" onclick="window.location.href='/name'" type="button" >
+                press to begin
+              </button>
             </div>
           </div>
-          
-          <div class="row">
-            <div class="col-6"></div>
-            <div class="col-2"></div>
-            <div class="col-3">
-              <button type="button" class="btn btn-primary btn-circle btn-sm font-weight-bold" data-toggle="modal" data-target="#exampleModal">
-                NEXT
+          <br>
+          <div class="row text-center">
+            <div class="col">
+              <button class="btn-shadow btn btn-primary font-weight-bold bg-blue" style="padding: 10px 25px;" onclick="window.location.href='/home'" type="button">
+                more info
               </button>
             </div>
           </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title text-dark-green text-center" id="exampleModalLabel">ARE YOU READY TO EMBARK ON YOUR CHANGEMAKING JOURNEY?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-footer">
-                <a class="mr-auto" href="/home"><button type="button" class="btn bg-dark-green text-white font-weight-bold">Find out more!</button></a>
-                <a href="/home-activities"><button type="button" class="btn bg-light-green text-white font-weight-bold">Yes</button></a>
-              </div>
+          <div class="row bottom text-center">
+            <div class="col">
+              <p>
+                <small>Presented by:</small><br>
+                <small>Lien Centre for Social Innovation</small>
+              </p>
             </div>
           </div>
-        </div>
 
       </div>
-</div>
+  
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
