@@ -1,4 +1,5 @@
 runtime: python37
+service: digdeeper
 env_variables:
   GCLOUD_PROJECT: 'artjam-287602'
 
