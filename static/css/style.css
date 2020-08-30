@@ -1,8 +1,31 @@
+/* General Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     font-family: 'Righteous', cursive;
 }
+
+.btn {
+    white-space: normal;
+}
+
+
+.btn.btn-primary, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover {
+    font-size: 25px;
+    border: none !important;
+}
+
+.btn-circle .btn-sm { 
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 12px; 
+    text-align: center;
+} 
+
+/* Reusable Classes */
 
 .full-height {
     height: 100%;
@@ -42,26 +65,9 @@
     box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.25);
 }
 
-.btn.btn-primary, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover {
-    font-size: 25px;
-    border: none !important;
-}
-
-.btn-circle .btn-sm { 
-    width: 70px; 
-    height: 70px; 
-    padding: 10px 16px; 
-    border-radius: 35px; 
-    font-size: 12px; 
-    text-align: center;
-} 
 
 .font-weight-bold {
     letter-spacing: 3px;
-}
-
-.btn {
-    white-space: normal;
 }
 
 .bottom {
