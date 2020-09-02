@@ -1,8 +1,8 @@
 const admin = require("firebase-admin")
 const serviceAccount = require("./artjam-287602-690502438d19.json");
-const data = require("./finalPersona.json")
+const data = require("./digdeeper.json")
 
-const collectionKey = "FinalPersona"
+const collectionKey = "DigDeeper"
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
