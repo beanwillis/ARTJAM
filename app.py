@@ -24,6 +24,10 @@ def books():
 def avatar():
     return render_template("avatar.html")
 
+@app.route("/confirm-avatar")
+def confirmAvatar():
+    return render_template("confirm-avatar.html")
+
 @app.route("/home-activities")
 def homeActivities():
     return render_template("activities-at-home.html")
