@@ -1,120 +1,171 @@
-
 {% extends "layout.html" %}
 {% block title %}Avatar Selection{% endblock %}
 
 {% block content %}
 
-    <div class="container">
+<div class="container bg-beige full-height">
 
-        <br>
-        <div class="row">
-            <div class="col" align='center'>
-                <h1>Avatar Selection</h1>
+    <br>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col" align='center'>
+            <h1>Pick An Avatar!</h1>
+        </div>
+    </div>
+
+    <br>
+    <div id="convo-circle" class="bg-blue convo-circle">
+        <p>Fab!</p>
+    </div>
+    <!-- <div class="row bg-light-blue" style="margin-top: -20px;">
+            <div class="col padding-0" align="center" id="image-choice">
+                <img width="250px" src="../static/img/fem_face_1.svg">
+            </div>
+        </div> -->
+
+    <div id="carouselControls" class="carousel slide bg-light-blue multi-item-carousel"
+        style="margin-top: -20px; position: absolute; left: 0; right: 0;" data-interval="false">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active image-choice" align="center">
+                <img width="250px" src="../static/img/fem_face_1.svg">
+            </div>
+            <div class="carousel-item image-choice" align="center">
+                <img width="250px" src="../static/img/fem_face_1.svg">
+            </div>
+            <div class="carousel-item image-choice" align="center">
+                <img width="250px" src="../static/img/fem_face_1.svg">
+            </div>
+            <div class="carousel-item image-choice" align="center">
+                <img width="250px" src="../static/img/fem_face_1.svg">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="row" id="instruction-text">
+        <p>Swipe to change your skintone!</p>
+    </div>
+    <br>
+    <div id="avatars">
+        <div class="row avatar-row">
+            
+            <div class="col padding-0" align="center">
+                <button id="avatar-1" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                </button>
+            </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-2" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_2.svg">
+                </button>
+            </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-3" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_3.svg">
+                </button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-10 padding-0" align="center" id="image-choice">
-                <img width="170px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
+        <div class="row avatar-row">
+            <div class="col padding-0" align="center">
+                <button id="avatar-4" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_4.svg">
+                </button>
             </div>
-            <div class="col" id="skin-tones">
-                <button id="skintone-1">
-                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+            <div class="col padding-0" align="center">
+                <button id="avatar-5" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
                 </button>
-                <button id="skintone-2">
-                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
-                </button>
-                <button id="skintone-3">
-                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
-                </button>
-                <button id="skintone-4">
-                    <img width="30px" src="https://img.pngio.com/blinkeze-eyelid-weights-fci-ophthalmics-skin-color-png-800_800.png">
+            </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-6" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
                 </button>
             </div>
         </div>
-        <br>
 
-        <div id="avatars">
-            <div class="row avatar-row">
-                <div class="col padding-0" align="center">
-                    <button id="avatar-1">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-2">
-                        <img width="100px" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_female_woman_avatar-512.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-3">
-                        <img width="100px" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_female_woman_avatar-512.png">
-                    </button>
-                </div>
+        <div class="row avatar-row">
+            <div class="col padding-0" align="center">
+                <button style="margin-top: -28px;" onclick="window.location.href='/name'">
+                    <img width="90px" src="../static/img/back.svg">
+                </button>
             </div>
-    
-            <div class="row avatar-row">
-                <div class="col padding-0" align="center">
-                    <button id="avatar-4">
-                        <img width="100px" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-512.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-5">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-6">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-7" class="avatar-btn">
+                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                </button>
             </div>
-    
-            <div class="row avatar-row">
-                <div class="col padding-0" align="center">
-                    <button id="avatar-7">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-8">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
-                <div class="col padding-0" align="center">
-                    <button id="avatar-9">
-                        <img width="100px" src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png">
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <div class="row">
-            <div class="col">
-                <button class='btn btn-primary float-right'>Next</button>
+            <div class="col padding-0" align="center">
+                <button style="margin-top: -28px;" onclick="window.location.href='/confirm-avatar'">
+                    <img width="90px" src="../static/img/next.svg">
+                </button>
             </div>
         </div>
     </div>
 
-    {% endblock %}
+</div>
 
-    {% block scripts %}
-    <script>
-        $(function() {
-            $("#skin-tones").bind("focusin", function() {
-                var focused_btn = $(":focus")
-                console.log(focused_btn)
-            })
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(function () {
+        $("#skin-tones").bind("focusin", function () {
+            var focused_btn = $(":focus")
+            console.log(focused_btn)
+        })
+    });
+
+    $(function () {
+        $("#avatars").bind("focusin", function () {
+            var focused_btn = $(":focus")
+            if (focused_btn.attr("class") !== undefined) {
+                $(".image-choice").find("img").each(function (element) {
+                    $(this)[0].src = focused_btn.find("img")[0].src
+                })
+
+            }
+
+            var text = ["Fab!", "Gr8!", "Nice!"]
+            var option = Math.floor(Math.random() * 3)
+
+            $("#convo-circle").find("p").text(text[option])
+
+        })
+    });
+
+    $(".carousel").on("touchstart", function (event) {
+        var xClick = event.originalEvent.touches[0].pageX;
+        $(this).one("touchmove", function (event) {
+            var xMove = event.originalEvent.touches[0].pageX;
+            if (Math.floor(xClick - xMove) > 5) {
+                $(this).carousel('next');
+            }
+            else if (Math.floor(xClick - xMove) < -5) {
+                $(this).carousel('prev');
+            }
         });
-
-        $(function() {
-            $("#avatars").bind("focusin", function() {
-                var focused_btn = $(":focus")
-                $("#image-choice").find("img")[0].src = focused_btn.find("img")[0].src
-            })
+        $(".carousel").on("touchend", function () {
+            $(this).off("touchmove");
         });
+    });
 
-    </script>
-    {% endblock %}
+
+</script>
+{% endblock %}

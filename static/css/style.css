@@ -11,19 +11,76 @@
 }
 
 
-.btn.btn-primary, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover {
+.btn.btn-primary,
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
     font-size: 25px;
     border: none !important;
 }
 
-.btn-circle .btn-sm { 
-    width: 70px; 
-    height: 70px; 
-    padding: 10px 16px; 
-    border-radius: 35px; 
-    font-size: 12px; 
+.btn-circle .btn-sm {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
     text-align: center;
-} 
+}
+
+.progress {
+    width: 95%;
+    margin: auto;
+}
+
+.progress-bar {
+    background-color: #4A8BAE;
+}
+
+/* Avatar screens */
+
+.avatar-btn {
+    width: 100px;
+    margin-left: -60px;
+    margin-top: -100px;
+}
+
+.avatar-img {
+    object-fit: cover;
+    object-position: center center;
+    width: 150px;
+}
+
+.convo-circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 10000;
+    position: absolute;
+    left: 240px;
+    margin-top: -30px;
+}
+
+.convo-circle p {
+    color: white;
+    position: absolute;
+    left: 18px;
+    top: 21px;
+    font-size: 25px;
+}
+
+.image-choice {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    padding: 0px 10px;
+}
+
+#instruction-text {
+    margin: auto;
+    margin-top: -40px;
+    margin-left: 70px;
+}
+
 
 /* Reusable Classes */
 
@@ -35,6 +92,7 @@
 .text-light-green {
     color: #25b5ac
 }
+
 .text-dark-green {
     color: #0b3c3a
 }
@@ -59,10 +117,14 @@
     background-color: #4A8BAE;
 }
 
+.bg-light-blue {
+    background-color: #B9D4D8;
+}
+
 .btn-shadow {
-    -webkit-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.25);
-    box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
 }
 
 
