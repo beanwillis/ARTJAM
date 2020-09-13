@@ -1,0 +1,74 @@
+
+{% extends "layout.html" %}
+{% block title %}Final Report{% endblock %}
+
+{% block content %}
+
+
+    <div class="container bg-beige full-height">
+
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+        <br>
+
+        <div id="face" class="">
+            <div class="row bg-light-blue" style="margin-top: -20px;">
+                <div class="col padding-0 image-choice" align="center" >
+                    <img width="300px" src="../static/img/fem_face_1.svg">
+                </div>
+            </div>
+        </div>
+
+        <div id="personaTitle" class="container text-center">
+            <h2 class="bg-orange text-white">
+                Your Changemaking Persona is CEO
+            </h2>
+            <div class="text-left">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam enim auctor tincidunt viverra. Praesent a pretium dui. In et eros at augue mollis placerat. </p>
+                <p>Quisque eget mi venenatis, sodales risus eget, pretium tellus. Donec nec massa est. Nullam dapibus ex non rhoncus venenatis. </p>
+                    Donec accumsan, augue id ultricies malesuada, urna diam faucibus odio, eget congue nibh purus sit amet orci. Morbi efficitur nibh quis vulputate lacinia. Phasellus malesuada finibus eros, sed consequat dolor. Aliquam sagittis nulla at imperdiet finibus. Curabitur vitae felis tincidunt odio tempor blandit vehicula ac dui. Nunc egestas lorem eget viverra suscipit. Phasellus nec turpis semper, tempus nunc a, maximus purus. Maecenas mattis quam eu est egestas porttitor. Vestibulum porttitor augue orci, nec aliquam dolor faucibus vitae.
+                </p>
+                <p>
+                    Vestibulum sed condimentum mi. Sed egestas interdum dui sed mattis. Integer id dapibus ipsum. Vivamus laoreet sit amet tortor id commodo. Ut fringilla felis quis erat congue, posuere imperdiet tortor scelerisque. Fusce fringilla dapibus nisl, posuere faucibus tellus. Vestibulum molestie congue nisl at commodo. Nam malesuada erat eget posuere sodales.
+                </p>
+            </div>
+        </div>
+
+        <div id="emailMe" class="text-center">
+            <form style="width:80%; margin:auto;">
+                <div class="form-group">
+                    <input type="email" id="inputEmail" aria-describedby="emailHelp" class="input-text form-control form-control-lg" placeholder="Enter your email">
+                  <!-- <input type="text" class="input-text form-control form-control-lg" placeholder="Enter Your Email"> -->
+                </div>
+                <button class="btn btn-primary bg-blue" onclick="window.location.href='#'" type="button" >
+                    Send Me My Report!
+                  </button>
+              </form>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <a href="#">
+                    <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/back.svg">
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/next.svg">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

@@ -44,6 +44,10 @@ def campusActivities():
 def diggingDeeper():
     return render_template("digging-deeper.html")
 
+@app.route("/final-report")
+def finalReport():
+    return render_template("final-report.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 
