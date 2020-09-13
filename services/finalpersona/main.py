@@ -10,7 +10,7 @@ import json
 
 app = Flask(__name__)
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "artjam-287602-690502438d19.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "artjam-287602-c4a440e2da91.json"
 
 cred = credentials.ApplicationDefault()
 firebase_admin.initialize_app(cred, {
@@ -41,19 +41,22 @@ def get_all_final_personas():
         print(e)
         return {"error": "Cannot retrieve final personas"}, 500
 
-# @app.route("/get_all_books")
-# def get_all_books():
-#     try:
-#         query = db.session.query(FinalPersona.books.distinct())
-        
-#         return {
-#             'books': [
-#                 FinalPersona[0] for FinalPersona in query.all()
-#             ]
-#         }, 200
-#     except Exception as e:
-#         print(e)
-#         return {"error" : "Cannot retrieve books"}, 500
+@app.route("/get_all_books")
+def get_all_books():
+    final_ref = db.collection(u"Books")
+    docs = final_ref.stream()
+
+    book_list = []
+    for doc in docs:
+        book_list.append(doc.to_dict())
+    
+    try:
+        return {
+            'books': book_list
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error": "Cannot retrieve books"}, 500
 
 
 if __name__ == '__main__':
