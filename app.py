@@ -44,6 +44,10 @@ def diggingDeeper():
 def finalReport():
     return render_template("final-report.html")
 
+@app.route("/skill-recommendation")
+def skill():
+    return render_template("skill-recommendation.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 
