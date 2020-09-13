@@ -49,7 +49,7 @@ def finalReport():
     return render_template("final-report.html")
 
 @app.route("/skill-recommendation")
-def skill():
+def skillRecommendation():
     return render_template("skill-recommendation.html")
 
 if __name__ == "__main__":
