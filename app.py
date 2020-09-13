@@ -20,6 +20,10 @@ def name():
 def books():
     return render_template("books.html")
 
+@app.route("/specificBook")
+def specificBook():
+    return render_template("specific-book.html")
+
 @app.route("/avatar")
 def avatar():
     return render_template("avatar.html")

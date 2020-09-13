@@ -5,18 +5,19 @@
 {% block content %}
 
 
-    <div class="container">
+    <div class="container bg-beige full-height">
 
         <br>
         <div class="row">
             <div class="col" align='center'>
                 <h1>Books</h1>
+                <h4>Click for more information</h4>
             </div>
         </div>
         <br>
 
         <div class="row">
-            <div class="col" id="book-list">
+            <div class="col" id="book-list" style="margin:auto;">
             </div>
         </div>
 
@@ -28,25 +29,35 @@
 <script>
 
     $(async() => {
-        var response = await fetch("http://localhost:5003/get_all_books")
+        var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_all_books")
         var data = await response.json();
         var books = data["books"]
 
         books.forEach(book => {
-            var row = '<a href='+ book['link'] + ' style="color: black !important;">' + 
-                        '<div class="card" style="overflow: auto">' + 
-                        '<div class="row no-gutters">' +
-                            '<div class="col-auto">' + 
-                                '<img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_library_bacteria.png" class="img-fluid" alt="">' + 
-                            '</div><div class="col">' + 
-                                '<div class="card-block px-3">' + 
-                                    '<h5 class="card-title">' + book["title"] + '</h5>' + 
-                                    '<p class="card-subtitle">' + book["author"] + '</p>' 
-                        '</div></div></div></div></a>'
+            var row = '<a class="book" href="/specificBook" id="' + book["name"] + '" style="color: black !important;">' + 
+                        '<img width="150px" style="margin-left: 25px; margin-top: 25px;" src="' + book["image_link"] + '"</a>'
 
             $("#book-list").append(row);
         });
+
+        $("#book-list").children().click(function() {
+
+            var clicked = this.id
+            var specificBook = "";
+            books.forEach(book => {
+                console.log(book["name"], clicked)
+                if (book["name"] == clicked) {
+                    specificBook = book
+                }
+            });
+
+            sessionStorage.setItem("book", JSON.stringify(specificBook))
+        })
+
     });
 
+
+
+    
 </script>
 {% endblock %}

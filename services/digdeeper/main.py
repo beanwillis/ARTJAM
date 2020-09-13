@@ -10,7 +10,7 @@ import json
 
 app = Flask(__name__)
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "artjam-287602-690502438d19.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "artjam-287602-c4a440e2da91.json"
 
 cred = credentials.ApplicationDefault()
 firebase_admin.initialize_app(cred, {
