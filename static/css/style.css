@@ -4,6 +4,8 @@
 
 * {
     font-family: 'Righteous', cursive;
+    background-color: #FDF6EE;
+
 }
 
 .btn {
@@ -35,6 +37,26 @@
 
 .progress-bar {
     background-color: #4A8BAE;
+}
+
+.jumbotron {
+    background-color: rgb(255, 192, 119);
+}
+
+/* Home Screen */
+
+#home-hero {
+    background-image: url('/static/img/home-2.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Books Screen */
+
+#book-list img {
+    -webkit-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.25);
 }
 
 /* Avatar screens */
@@ -97,6 +119,10 @@
     color: #0b3c3a
 }
 
+.text-white {
+    color:white
+}
+
 .bg-dark-green {
     background-color: #0b3c3a;
 }
@@ -152,4 +178,17 @@
 .input-text::placeholder {
     color: #0b3c3a !important;
     opacity: 1 !important;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
