@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+{% block title %}Thank You!{% endblock %}
+
+{% block content %}
+
+
+    <div class="container bg-beige">
+
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <h1>Thank you for travelling with us on this Changemaking Journey!</h1>
+                <div class="col" style="margin:auto;">
+
+                </div>
+                
+            </div>
+        </div>
+        <br>
+
+        <div class="row text-center ">
+            <div class="col justify-content-between">
+
+                    <button class="btn btn-primary bg-blue" onclick="window.location.href='/home'" type="button">
+                        Learn about Changemaing in SMU
+                    </button>
+
+                </div>
+                <br>
+            <div class="col justify-content-between">
+
+                <button class="btn btn-primary bg-blue" onclick="window.location.href='/home'" type="button">
+                    More Book Recommendations
+                </button>
+                <br>
+            </div>
+
+            <div class="col justify-content-between">
+
+                <button class="btn btn-primary bg-blue" onclick="window.location.href='/home'" type="button">
+                    More Skill Recommendations
+                </button>
+            </div>
+
+            
+        </div>
+
+        <div id="emailMe" class="text-center">
+            <form style="width:80%; margin:auto;">
+                <div class="form-group">
+                    <input type="email" id="inputEmail" aria-describedby="emailHelp" class="input-text form-control form-control-lg" placeholder="Enter your email">
+                </div>
+                <button class="btn btn-primary bg-blue" onclick="window.location.href='#'" type="button" >
+                    Send Me My Report!
+                  </button>
+              </form>
+        </div>
+
+
+        
+<!-- BACK NEXT BUTTONS -->
+        <br>
+        <div class="row">
+            <div class="col">
+                <a href="/other-resource">
+                    <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/back.svg">
+                </a>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary  bg-orange" style="padding: 20px 25px; width: 150px; float: right; margin-right: 30px;" onclick="window.location.href='/home'" type="button">
+                    Start Over
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

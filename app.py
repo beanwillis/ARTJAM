@@ -52,6 +52,18 @@ def finalReport():
 def skillRecommendation():
     return render_template("skill-recommendation.html")
 
+@app.route("/book-recommendation")
+def bookRecommendation():
+    return render_template("book-recommendation.html")
+
+@app.route("/other-resource")
+def otherResource():
+    return render_template("other-resource.html")
+
+@app.route("/thank-you")
+def thankYou():
+    return render_template("thank-you.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 

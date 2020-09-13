@@ -1,0 +1,125 @@
+
+{% extends "layout.html" %}
+{% block title %}Book Recommendation{% endblock %}
+
+{% block content %}
+
+
+    <div class="container bg-beige full-height">
+
+        <br>
+        <div class="row">
+            <div class="col" align='center'>
+                <h1>Books</h1>
+                <h4>Here are some books you might find useful!</h4>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col" id="book-list" style="margin:auto;">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Book Title 1
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#skill-list">
+                      <div class="card-body">
+                        Book 1 Description
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Collapsible Group Item #2
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skill-list">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Collapsible Group Item #3
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skill-list">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- BACK NEXT BUTTONS -->
+        <br>
+        <div class="row">
+            <div class="col">
+                <a href="/skill-recommendation">
+                    <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/back.svg">
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="/other-resource">
+                    <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/next.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+
+    // $(async() => {
+    //     var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_all_books")
+    //     var data = await response.json();
+    //     var books = data["books"]
+
+    //     books.forEach(book => {
+    //         var row = '<a class="book" href="/specificBook" id="' + book["name"] + '" style="color: black !important;">' + 
+    //                     '<img width="150px" style="margin-left: 25px; margin-top: 25px;" src="' + book["image_link"] + '"</a>'
+
+    //         $("#book-list").append(row);
+    //     });
+
+    //     $("#book-list").children().click(function() {
+
+    //         var clicked = this.id
+    //         var specificBook = "";
+    //         books.forEach(book => {
+    //             console.log(book["name"], clicked)
+    //             if (book["name"] == clicked) {
+    //                 specificBook = book
+    //             }
+    //         });
+
+    //         sessionStorage.setItem("book", JSON.stringify(specificBook))
+    //     })
+
+    // });
+
+
+
+    
+</script>
+{% endblock %}
