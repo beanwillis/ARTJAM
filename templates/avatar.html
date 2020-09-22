@@ -14,7 +14,7 @@
     <br>
     <div class="row">
         <div class="col" align='center'>
-            <h1>Pick An Avatar!</h1>
+            <h2>Pick An Avatar!</h2>
         </div>
     </div>
 
@@ -24,7 +24,7 @@
     </div>
     <!-- <div class="row bg-light-blue" style="margin-top: -20px;">
             <div class="col padding-0" align="center" id="image-choice">
-                <img width="250px" src="../static/img/fem_face_1.svg">
+                <img width="250px" src="../static/img/avatar-1.svg">
             </div>
         </div> -->
 
@@ -33,16 +33,16 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active image-choice" align="center">
-                <img width="250px" src="../static/img/fem_face_1.svg">
+                <img width="250px" src="../static/img/avatar-1.svg">
             </div>
             <div class="carousel-item image-choice" align="center">
-                <img width="250px" src="../static/img/fem_face_1.svg">
+                <img width="250px" src="../static/img/avatar-1.svg">
             </div>
             <div class="carousel-item image-choice" align="center">
-                <img width="250px" src="../static/img/fem_face_1.svg">
+                <img width="250px" src="../static/img/avatar-1.svg">
             </div>
             <div class="carousel-item image-choice" align="center">
-                <img width="250px" src="../static/img/fem_face_1.svg">
+                <img width="250px" src="../static/img/avatar-1.svg">
             </div>
 
         </div>
@@ -57,9 +57,11 @@
     </div>
     <br>
 
-    <br><br><br><br><br><br><br><br>
-    <div class="row" id="instruction-text">
-        <p>Swipe to change your skintone!</p>
+    <br><br><br><br><br><br><br>
+    <div class="row text-center" >
+        <div class="col">
+            <p>Swipe to change your skintone!</p>
+        </div>
     </div>
     <br>
     <div id="avatars">
@@ -67,17 +69,17 @@
             
             <div class="col padding-0" align="center">
                 <button id="avatar-1" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                    <img class="avatar-img" src="../static/img/avatar-1.svg">
                 </button>
             </div>
             <div class="col padding-0" align="center">
                 <button id="avatar-2" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_2.svg">
+                    <img class="avatar-img" src="../static/img/avatar-2.svg">
                 </button>
             </div>
             <div class="col padding-0" align="center">
                 <button id="avatar-3" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_3.svg">
+                    <img class="avatar-img" src="../static/img/avatar-3.svg">
                 </button>
             </div>
         </div>
@@ -85,35 +87,53 @@
         <div class="row avatar-row">
             <div class="col padding-0" align="center">
                 <button id="avatar-4" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_4.svg">
+                    <img class="avatar-img" src="../static/img/avatar-4.svg">
                 </button>
             </div>
             <div class="col padding-0" align="center">
                 <button id="avatar-5" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                    <img class="avatar-img" src="../static/img/avatar-1.svg">
                 </button>
             </div>
             <div class="col padding-0" align="center">
                 <button id="avatar-6" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                    <img class="avatar-img" src="../static/img/avatar-1.svg">
                 </button>
             </div>
         </div>
 
         <div class="row avatar-row">
             <div class="col padding-0" align="center">
-                <button style="margin-top: -28px;" onclick="window.location.href='/name'">
-                    <img width="90px" src="../static/img/back.svg">
-                </button>
-            </div>
-            <div class="col padding-0" align="center">
                 <button id="avatar-7" class="avatar-btn">
-                    <img class="avatar-img" width="100px" src="../static/img/fem_face_1.svg">
+                    <img class="avatar-img" src="../static/img/avatar-4.svg">
                 </button>
             </div>
             <div class="col padding-0" align="center">
-                <button style="margin-top: -28px;" onclick="window.location.href='/confirm-avatar'">
-                    <img width="90px" src="../static/img/next.svg">
+                <button id="avatar-8" class="avatar-btn">
+                    <img class="avatar-img" src="../static/img/avatar-1.svg">
+                </button>
+            </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-9" class="avatar-btn">
+                    <img class="avatar-img" src="../static/img/avatar-1.svg">
+                </button>
+            </div>
+        </div>
+
+        <div class="row avatar-row">
+            <div class="col padding-0" align="center">
+                <button  onclick="window.location.href='/name'">
+                    <img width="85%" style="margin-top: -20%;" src="../static/img/back.svg">
+                </button>
+            </div>
+            <div class="col padding-0" align="center">
+                <button id="avatar-10" style="margin-top: -30%;" class="avatar-btn">
+                    <img class="avatar-img" style="margin-top: -20%;" src="../static/img/avatar-1.svg">
+                </button>
+            </div>
+            <div class="col padding-0" align="center">
+                <button  onclick="window.location.href='/confirm-avatar'">
+                    <img width="85%" style="margin-left: 15%; margin-top: -20%;" src="../static/img/next.svg">
                 </button>
             </div>
         </div>
@@ -138,6 +158,8 @@
             if (focused_btn.attr("class") !== undefined) {
                 $(".image-choice").find("img").each(function (element) {
                     $(this)[0].src = focused_btn.find("img")[0].src
+                    sessionStorage.setItem("chosen-avatar", focused_btn[0].id)
+
                 })
 
             }

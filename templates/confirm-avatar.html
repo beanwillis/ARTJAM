@@ -19,35 +19,35 @@
     </div>
 
     <br>
-    <div id="convo-circle" class="bg-blue convo-circle">
-        <p>Fab!</p>
-    </div>
-    <div class="row bg-light-blue" style="margin-top: -20px;">
+
+    <div class="row bg-light-blue" style="margin-top: 0%;">
         <div class="col padding-0 image-choice" align="center" >
-            <img width="300px" src="../static/img/fem_face_1.svg">
+            <img id="chosen-avatar-img" width="300px" src="../static/img/avatar-1.svg">
         </div>
     </div>
 
 
-    <br><br>
+    <br>
     <div class="row">
-        <h1 class="mx-auto text-center">Name : Alice</h1>
+        <h1 class="mx-auto text-center">Name : <span id="avatar-name"></span></h1>
     </div>
 
-    <br><br>
+    <br>
     <div class="row text-center mx-auto" >
         <div class="col">
-          <button class="btn btn-primary bg-blue" style="padding: 20px 25px; width: 150px;" onclick="window.location.href='/name'" type="button" >
+          <button class="btn btn-primary bg-blue" style="font-size: 150%; padding: 15px 20px; width: 100%;" onclick="window.location.href='/name'" type="button" >
             Edit Info
           </button>
         </div>
 
         <div class="col">
-            <button class="btn btn-primary  bg-orange" style="padding: 20px 25px; width: 150px; " onclick="window.location.href='/'" type="button">
+            <button class="btn btn-primary  bg-orange" style="font-size: 150%; padding: 15px 20px; width: 100%; " onclick="window.location.href='/wheel'" type="button">
               Yes!
             </button>
           </div>
       </div>
+
+      <br> <br> <br> 
 
 
 
@@ -58,6 +58,16 @@
 {% block scripts %}
 <script>
 
+
+var name = sessionStorage.getItem("name");
+name = name.charAt(0).toUpperCase() + name.slice(1);
+document.getElementById("avatar-name").innerText = name ;
+
+var avatar = sessionStorage.getItem("chosen-avatar");
+if (avatar != "") {
+    console.log(avatar)
+    document.getElementById("chosen-avatar-img").src = "../static/img/" + avatar + ".svg"
+}
 
 
 </script>
