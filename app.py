@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 CORS(app)
 
+@app.route("/laptop-home")
+def laptopHome():
+    return render_template("laptop-home.html")
+
 @app.route("/home")
 def about():
     return render_template("home.html")
@@ -11,6 +15,10 @@ def about():
 @app.route("/welcome")
 def welcome():
     return render_template("welcome.html")
+
+@app.route("/info")
+def info():
+    return render_template("info.html")
 
 @app.route("/name")
 def name():
