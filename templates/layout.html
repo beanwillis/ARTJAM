@@ -29,7 +29,9 @@
         <!-- <img src="<home icon link here>" width="30" height="30" class="d-inline-block align-top" alt=""> -->
           <button id="home-btn" type="button" class="btn text-white bg-beige font-weight-bold">
             <div style="object-fit: cover; width: 20px; height: 20px;">
-              <img  style="width: 40px; filter: invert(100%)" src="../static/img/home-icon.png">
+
+              <!-- <img  style="width: 40px; filter: invert(100%)" src="../static/img/home-icon.png"> -->
+              <img  style="width: 40px; filter: invert(100%)" src="{{ url_for('static', filename = 'img/home-icon.png') }}">
               
             </div>
             

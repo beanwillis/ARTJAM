@@ -1,5 +1,8 @@
 from flask import Flask, render_template, redirect
 from flask_cors import CORS
+
+from services.emailer import sendReport
+
 app = Flask(__name__)
 
 CORS(app)
@@ -71,6 +74,11 @@ def otherResource():
 @app.route("/thank-you")
 def thankYou():
     return render_template("thank-you.html")
+
+@app.route("/emailReport/<string:emailAddress>/<string:personaType>")
+def emailReport(emailAddress, personaType):
+    sendReport(emailAddress, personaType)
+    return render_template("thank-you.html", emailed="emailed")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
