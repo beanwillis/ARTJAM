@@ -31,6 +31,7 @@ def get_all_final_personas():
 
     persona_list = []
     for doc in docs:
+        print(doc)
         persona_list.append(doc.to_dict())
     
     try:
@@ -58,6 +59,23 @@ def get_all_books():
         print(e)
         return {"error": "Cannot retrieve books"}, 500
 
+@app.route("/get_all_skills")
+def get_all_skills():
+    final_ref = db.collection(u"FinalPersona")
+    docs = final_ref.stream()
+
+    persona_list = []
+    for doc in docs:
+        # print(doc)
+        persona_list.append(doc.to_dict())
+    
+    try:
+        return {
+            'final personas': persona_list
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error": "Cannot retrieve final personas"}, 500
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5002, debug=True)
