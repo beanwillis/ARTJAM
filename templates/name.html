@@ -1,70 +1,79 @@
+{% extends "layout.html" %} {% block title %}Books{% endblock %} {% block
+content %}
 
-{% extends "layout.html" %}
-{% block title %}Books{% endblock %}
+<div class="container bg-beige full-height">
+  <br />
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      style="width: 25%"
+      aria-valuenow="25"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    ></div>
+  </div>
 
-{% block content %}
+  <br /><br /><br />
 
-
-    <div class="container bg-beige full-height">
-
-        <br>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100"></div>
-        </div>
-        
-        <br><br><Br>
-        
-        <div class="row" >
-            <div class="col" align='center' >
-                <h2>An avatar and<br>nickname are all <br>you need!</h2>
-            </div>
-        </div>
-        <br><br>
-
-        <div class="row">
-            <div class="col">
-                <form style="width:80%; margin:auto;">
-                  <div class="form-group">
-                    <input type="text" id="nickname-input" class="input-text form-control form-control-lg" placeholder="nickname">
-                  </div>
-                </form>
-            </div>
-        </div>
-
-        <br><br><br><br><br>
-        <div class="row">
-            <div class="col">
-                <a id="avatar-link" href="/avatar">
-                    <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/next.svg">
-
-                </a>
-            </div>
-        </div>
-
+  <div class="row">
+    <div class="col" align="center">
+      <h2>An avatar and<br />nickname are all <br />you need!</h2>
     </div>
+  </div>
+  <br /><br />
+
+  <div class="row">
+    <div class="col">
+      <form style="width: 80%; margin: auto">
+        <div class="form-group">
+          <input
+            type="text"
+            id="nickname-input"
+            class="input-text form-control form-control-lg"
+            placeholder="nickname"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br />
+  <div class="row">
+    <div class="col">
+      <a id="avatar-link" href="/avatar">
+        <img
+          style="width: 90px; float: right; margin-right: 30px"
+          src=" {{ url_for('static', filename = 'img/next.svg') }}"
+        />
+      </a>
+    </div>
+  </div>
+</div>
 
 <script>
-
-    document.getElementById("nickname-input").addEventListener("input", function() {
-        sessionStorage.setItem("name", document.getElementById("nickname-input").value)
-    })
-
-    document.getElementById("nickname-input").addEventListener("keydown", function(e) {
-        if (window.event.keyCode == 13) {
-            e.preventDefault()
-            
-            sessionStorage.setItem("name", document.getElementById("nickname-input").value)
-            window.location.href="/avatar"
-        }
-        
+  document
+    .getElementById("nickname-input")
+    .addEventListener("input", function () {
+      sessionStorage.setItem(
+        "name",
+        document.getElementById("nickname-input").value
+      );
     });
 
+  document
+    .getElementById("nickname-input")
+    .addEventListener("keydown", function (e) {
+      if (window.event.keyCode == 13) {
+        e.preventDefault();
+
+        sessionStorage.setItem(
+          "name",
+          document.getElementById("nickname-input").value
+        );
+        window.location.href = "/avatar";
+      }
+    });
 </script>
 
-{% endblock %}
-
-
-{% block scripts %}
-
-{% endblock %}
+{% endblock %} {% block scripts %} {% endblock %}

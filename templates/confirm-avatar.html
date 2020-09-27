@@ -1,74 +1,84 @@
-{% extends "layout.html" %}
-{% block title %}Avatar Selection{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block title %}Avatar Selection{% endblock %} {%
+block content %}
 
 <div class="container bg-beige full-height">
+  <br />
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      style="width: 25%"
+      aria-valuenow="25"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    ></div>
+  </div>
 
-    <br>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100"></div>
+  <br />
+  <div class="row">
+    <div class="col" align="center">
+      <h1>All Set?</h1>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row bg-light-blue" style="margin-top: 0%">
+    <div class="col padding-0 image-choice" align="center">
+      <img
+        id="chosen-avatar-img"
+        width="300px"
+        src="../static/img/avatar-1.svg"
+        
+      />
+    </div>
+  </div>
+
+  <br />
+  <div class="row">
+    <h1 class="mx-auto text-center">Name : <span id="avatar-name"></span></h1>
+  </div>
+
+  <br />
+  <div class="row text-center mx-auto">
+    <div class="col">
+      <button
+        class="btn btn-primary bg-blue"
+        style="font-size: 150%; padding: 15px 20px; width: 100%"
+        onclick="window.location.href='/name'"
+        type="button"
+      >
+        Edit Info
+      </button>
     </div>
 
-    <br>
-    <div class="row">
-        <div class="col" align='center'>
-            <h1>All Set?</h1>
-        </div>
+    <div class="col">
+      <button
+        class="btn btn-primary bg-orange"
+        style="font-size: 150%; padding: 15px 20px; width: 100%"
+        onclick="window.location.href='/wheel'"
+        type="button"
+      >
+        Yes!
+      </button>
     </div>
+  </div>
 
-    <br>
-
-    <div class="row bg-light-blue" style="margin-top: 0%;">
-        <div class="col padding-0 image-choice" align="center" >
-            <img id="chosen-avatar-img" width="300px" src="../static/img/avatar-1.svg">
-        </div>
-    </div>
-
-
-    <br>
-    <div class="row">
-        <h1 class="mx-auto text-center">Name : <span id="avatar-name"></span></h1>
-    </div>
-
-    <br>
-    <div class="row text-center mx-auto" >
-        <div class="col">
-          <button class="btn btn-primary bg-blue" style="font-size: 150%; padding: 15px 20px; width: 100%;" onclick="window.location.href='/name'" type="button" >
-            Edit Info
-          </button>
-        </div>
-
-        <div class="col">
-            <button class="btn btn-primary  bg-orange" style="font-size: 150%; padding: 15px 20px; width: 100%; " onclick="window.location.href='/wheel'" type="button">
-              Yes!
-            </button>
-          </div>
-      </div>
-
-      <br> <br> <br> 
-
-
-
+  <br />
+  <br />
+  <br />
 </div>
 
-{% endblock %}
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script>
+  var name = sessionStorage.getItem("name");
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  document.getElementById("avatar-name").innerText = name;
 
-
-var name = sessionStorage.getItem("name");
-name = name.charAt(0).toUpperCase() + name.slice(1);
-document.getElementById("avatar-name").innerText = name ;
-
-var avatar = sessionStorage.getItem("chosen-avatar");
-if (avatar != "") {
-    console.log(avatar)
+  var avatar = sessionStorage.getItem("chosen-avatar");
+  if (avatar != "") {
+    console.log(avatar);
     document.getElementById("chosen-avatar-img").src = "../static/img/" + avatar + ".svg"
-}
-
-
+  }
 </script>
 {% endblock %}

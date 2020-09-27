@@ -1,113 +1,141 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en" style="height: 100%">
+  <head>
+    <title>ARTJAM - Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>ARTJAM - Home</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/book-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="stylesheet" href="/static/css/book-style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-</head>
-
-<body style="height:100%;">
-
-  <div style="height: 100vh; background-size:cover; background-image: url('/static/img/insp-bg.jpg');">
-    <div class="container-fluid no-bg">
-      <div class="row text-center no-bg">
-        <div class="col" style="width:70%; margin: auto;">
-          <br><br>
-          <img width="60%" src="/static/img/smu-logo.png">
-          <br><br><br><br>
-          <h2>Welcome to your Changemaking Journey</h2>
-          <br>
-          <button class="btn btn-primary bg-orange" style="padding: 10px 10px; width: 220px; font-size: 25px;"
-            onclick="window.location.href='/name'" type="button">
-            press to begin
-          </button>
+  <body style="height: 100%">
+    <div
+      style="
+        height: 100vh;
+        background-size: cover;
+        background-image: url('/static/img/insp-bg.jpg');
+      "
+    >
+      <div class="container-fluid no-bg">
+        <div class="row text-center no-bg">
+          <div class="col" style="width: 70%; margin: auto">
+            <br /><br />
+            <img width="60%" src=" {{ url_for('static', filename = 'img/smu-logo.png') }}" />
+            <br /><br /><br /><br />
+            <h2>Welcome to your Changemaking Journey</h2>
+            <br />
+            <button
+              class="btn btn-primary bg-orange"
+              style="padding: 10px 10px; width: 220px; font-size: 25px"
+              onclick="window.location.href='/name'"
+              type="button"
+            >
+              press to begin
+            </button>
+          </div>
         </div>
 
+        <div class="row">
+          <div
+            class="col text-center text-white"
+            style="height: 30vh; overflow: hidden"
+          >
+            <p class="swipe-info">
+              Swipe for more information<br /><br />
+              <i class="fas fa-chevron-down" style="color: white"></i>
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
 
-
+    <div class="container bg-beige" id="changemaking-info">
       <div class="row">
-        <div class="col text-center text-white" style="height: 30vh; overflow: hidden;">
-          <p class="swipe-info">Swipe for more information<br><br>
-            <i class="fas fa-chevron-down" style="color: white;"></i>
-          </p>
+        <div class="col text-center">
+          <br /><br /><br />
+          <h2 class="text-center">Changemaking Resources</h2>
+          <br />
+          <div class="padding-0" align="center">
+            <button onclick="window.location.href='/books'">
+              <div class="jumbotron">
+                <h3>Recommended<br />Books</h3>
+                <img
+                  width="25%"
+                  style="margin-left: 70%; margin-top: -10%"
+                  src=" {{ url_for('static', filename = 'img/next.svg') }}"
+                />
+              </div>
+            </button>
+          </div>
 
+          <div class="padding-0" align="center">
+            <button onclick="window.location.href='/books'">
+              <div class="jumbotron">
+                <h3>Recommended<br />Skills</h3>
+                <img
+                  width="25%"
+                  style="margin-left: 70%; margin-top: -10%"
+                  src=" {{ url_for('static', filename = 'img/next.svg') }}"
+                />
+              </div>
+            </button>
+          </div>
+          <br />
+
+          <button
+            class="btn btn-primary bg-orange"
+            style="padding: 10px 10px; width: 220px; font-size: 25px"
+            onclick="window.location.href='/info'"
+            type="button"
+          >
+            More about Changemaking
+          </button>
+
+          <br /><br /><br />
         </div>
       </div>
     </div>
 
-  </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <div class="container bg-beige" id="changemaking-info">
-    <div class="row">
-      <div class="col text-center">
-        <br><br><br>
-        <h2 class="text-center">Changemaking Resources</h2>
-        <br>
-        <div class="padding-0" align="center">
-          <button onclick="window.location.href='/books'">
-            <div class="jumbotron">
-              <h3>Recommended<br>Books</h3>
-              <img width="25%" style="margin-left: 70%; margin-top: -10%;" src="../static/img/next.svg">
-            </div>
-          </button>
-        </div>
-
-        <div class="padding-0" align="center">
-          <button onclick="window.location.href='/books'">
-            <div class="jumbotron">
-              <h3>Recommended<br>Skills</h3>
-              <img width="25%" style="margin-left: 70%; margin-top: -10%;" src="../static/img/next.svg">
-            </div>
-          </button>
-        </div>
-        <br>
-
-        <button class="btn btn-primary bg-orange" style="padding: 10px 10px; width: 220px; font-size: 25px;"
-          onclick="window.location.href='/info'" type="button">
-          More about Changemaking
-        </button>
-
-        <br><br><br>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <script>
-
-    $(window).on("load resize", function () {
-      if ($(window).width() > 700) {
-        window.location = "/laptop-home"
-      }
-    });
-  </script>
-
-
-</body>
-
-
+    <script>
+      $(window).on("load resize", function () {
+        if ($(window).width() > 700) {
+          window.location = "/laptop-home";
+        }
+      });
+    </script>
+  </body>
 </html>

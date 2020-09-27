@@ -1,115 +1,154 @@
-
-{% extends "layout.html" %}
-{% block title %}Skill Recommendation{% endblock %}
-
+{% extends "layout.html" %} {% block title %}Skill Recommendation{% endblock %}
 {% block content %}
 
+<div class="container bg-beige">
+  <br />
+  <div class="row">
+    <div class="col text-center">
+      <h1>Skill Recommendation</h1>
+      <div class="col" style="margin: auto">
+        <img
+          src="https://www.cedefop.europa.eu/files/images/identyfying_skills_needs_360x240.jpg"
+        />
+        <h4>Tap for more information</h4>
+      </div>
 
-    <div class="container bg-beige">
+      <div class="col" id="skill-list" style="margin: auto">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Skill 1
+              </button>
+            </h5>
+          </div>
 
-        <br>
-        <div class="row">
-            <div class="col text-center">
-                <h1>Skill Recommendation</h1>
-                <div class="col" style="margin:auto;">
-                    <img src="https://www.cedefop.europa.eu/files/images/identyfying_skills_needs_360x240.jpg">
-                    <h4>Tap for more information</h4>
-                </div>
-                
-                <div class="col" id="skill-list" style="margin:auto;">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Skill 1
-                              </button>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#skill-list">
-                            <div class="card-body">
-                              Skill 1 Description
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skill-list">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skill-list">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                      
-                </div>
-            </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#skill-list"
+          >
+            <div class="card-body">Skill 1 Description</div>
+          </div>
         </div>
-        <br>
-
-        <div class="row">
-            
-        </div>
-
-
-
-        <!-- BACK NEXT BUTTONS -->
-        <br>
-        <div class="row">
-            <div class="col">
-                <a href="/final-report">
-                    <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/back.svg">
-                </a>
-
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Collapsible Group Item #2
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#skill-list"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
             </div>
-            <div class="col">
-                <a href="/book-recommendation">
-                    <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/next.svg">
-                </a>
-            </div>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Collapsible Group Item #3
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#skill-list"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <br />
 
-{% endblock %}
+  <div class="row"></div>
 
-{% block scripts %}
+  <!-- BACK NEXT BUTTONS -->
+  <br />
+  <div class="row">
+    <div class="col">
+      <a href="/final-report">
+        <img
+          style="width: 90px; float: left; margin-left: 30px"
+          src=" {{ url_for('static', filename = 'img/back.svg') }}"
+        />
+      </a>
+    </div>
+    <div class="col">
+      <a href="/book-recommendation">
+        <img
+          style="width: 90px; float: right; margin-right: 30px"
+          src=" {{ url_for('static', filename = 'img/next.svg') }}"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block scripts %}
 <script>
+  // $(async() => {
+  //     var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_all_skills")
+  //     var data = await response.json();
+  //     var skills = data["skills"]
 
-    // $(async() => {
-    //     var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_all_skills")
-    //     var data = await response.json();
-    //     var skills = data["skills"]
+  //     skills.forEach(skill => {
+  //         // var row = '<a class="" href="/specificBook" id="' + skill["name"] + '" style="color: black !important;">' +
+  //         //             '<img width="150px" style="margin-left: 25px; margin-top: 25px;" src="' + book["image_link"] + '"</a>'
+  //             var row ="<p>hallo</p>";
+  //         $("#skill-list").append(row);
+  //     });
 
-    //     skills.forEach(skill => {
-    //         // var row = '<a class="" href="/specificBook" id="' + skill["name"] + '" style="color: black !important;">' + 
-    //         //             '<img width="150px" style="margin-left: 25px; margin-top: 25px;" src="' + book["image_link"] + '"</a>'
-    //             var row ="<p>hallo</p>";
-    //         $("#skill-list").append(row);
-    //     });
-
-    // });
-
-
-
-    
+  // });
 </script>
 {% endblock %}

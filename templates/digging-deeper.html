@@ -1,66 +1,77 @@
-{% extends "layout.html" %}
-{% block title %}Digging Deeper{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block title %}Digging Deeper{% endblock %} {%
+block content %}
 <div class="container text-center">
-  <br>
-    <h3>Digging Deeper</h3>
-    <div class="card text-black bg-transparent text-center">
-        <img class="card-img img-fluid" src="/static/img/living-room.jpg" alt="Living Room">
-    </div>
-    <br>
-    <div>
-      <h6 class="text-left"> Everyone has some likes and dislikes.
-        Everyone has diffrent approaches towards life. What is your favorite approach? </h6>
-      <form id="iLikeToDos">
-      </form>
-    </div>
-<br>
-    <div>
-      <span class="float-left">
-        <a href="/campus-activities"><button type="button" class="btn bg-dark-green text-white font-weight-bold">Back</button></a>
-      </span>
+  <br />
+  <h3>Digging Deeper</h3>
+  <div class="card text-black bg-transparent text-center">
+    <img
+      class="card-img img-fluid"
+      src=" {{ url_for('static', filename = 'img/living-room.jpg') }}"
+      alt="Living Room"
+    />
+  </div>
+  <br />
+  <div>
+    <h6 class="text-left">
+      Everyone has some likes and dislikes. Everyone has diffrent approaches
+      towards life. What is your favorite approach?
+    </h6>
+    <form id="iLikeToDos"></form>
+  </div>
+  <br />
+  <div>
+    <span class="float-left">
+      <a href="/campus-activities"
+        ><button
+          type="button"
+          class="btn bg-dark-green text-white font-weight-bold"
+        >
+          Back
+        </button></a
+      >
+    </span>
 
-      <span class="float-right">
-        <a href="/"><button type="button" class="btn bg-light-green text-white font-weight-bold">Next</button></a>
-      </span>
-    </div>
+    <span class="float-right">
+      <a href="/"
+        ><button
+          type="button"
+          class="btn bg-light-green text-white font-weight-bold"
+        >
+          Next
+        </button></a
+      >
+    </span>
+  </div>
 </div>
 
-{% endblock %}
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script>
-    async function displayDigDeeper() {
+  async function displayDigDeeper() {
     // TODO: create session to store issue, skill, interest from wheel screen
-   
 
-    let iLikeToURL = "http://localhost:5003/get_iLikeTo" 
+    let iLikeToURL = "http://localhost:5003/get_iLikeTo";
     try {
-      const digDeeperResponse =
-      await fetch(
-        iLikeToURL, {method: 'GET',
-        }
-      );
+      const digDeeperResponse = await fetch(iLikeToURL, { method: "GET" });
       const digDeeperData = await digDeeperResponse.json();
 
       if (digDeeperResponse.ok) {
-        var iLikeToObj = digDeeperData["iLikeTo"]
+        var iLikeToObj = digDeeperData["iLikeTo"];
 
-        var iLikeToHTML = ""
+        var iLikeToHTML = "";
 
         for (let key in iLikeToObj) {
           if (iLikeToObj.hasOwnProperty(key)) {
             // <input class="btn btn-primary" type="button" value="Input">
-              // iLikeToHTML += '<button class="btn btn-outline-dark btn-block" value=' + key + '>' + iLikeToObj[key] + '</button><br>'
-              // console.log(iLikeToObj[key])
-              iLikeToHTML += '<input type="button" class="btn btn-outline-dark btn-block" value="' + iLikeToObj[key] + '">'
-
+            // iLikeToHTML += '<button class="btn btn-outline-dark btn-block" value=' + key + '>' + iLikeToObj[key] + '</button><br>'
+            // console.log(iLikeToObj[key])
+            iLikeToHTML +=
+              '<input type="button" class="btn btn-outline-dark btn-block" value="' +
+              iLikeToObj[key] +
+              '">';
           }
         }
-        console.log(iLikeToHTML)
+        console.log(iLikeToHTML);
         document.getElementById("iLikeToDos").innerHTML = iLikeToHTML;
-
       } else {
         showError(data_dep.message);
       }
@@ -68,28 +79,23 @@
       console.log(error);
     }
   }
-  displayDigDeeper()
+  displayDigDeeper();
 
   async function displayDescription() {
     // TO DO: get this value from user input button in function displayDigDeeper
-    let value = "Create things that improve lives"
+    let value = "Create things that improve lives";
     let descURL = "http://localhost:5003/get_dig_deeper_desc/" + value;
     try {
-      const descResponse =
-      await fetch(
-        descURL, {method: 'GET',
-        }
-      );
+      const descResponse = await fetch(descURL, { method: "GET" });
       const descData = await descResponse.json();
 
       if (descResponse.ok) {
-        var longDesc = descData["longDesc"]
-        var shortDesc = descData["shortDesc"]
+        var longDesc = descData["longDesc"];
+        var shortDesc = descData["shortDesc"];
 
-        var modalHTML = longDesc + "<br>" + shortDesc
+        var modalHTML = longDesc + "<br>" + shortDesc;
 
         document.getElementById("modal").innerHTML = modalHTML;
-
       } else {
         showError(data_dep.message);
       }
@@ -97,8 +103,7 @@
       console.log(error);
     }
   }
-  displayDescription()
-
+  displayDescription();
 </script>
 
 {% endblock %}
