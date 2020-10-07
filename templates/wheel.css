@@ -1,7 +1,7 @@
-* {
+/* * {
     font-family: 'Montserrat';
     font-size: 18px;
-}
+} */
 
 .header, .progress {
     margin-top: 25px;
@@ -66,6 +66,7 @@
     float:right;
     margin-right: 15px;
     margin-top: 10px;
+    margin-bottom: 15px;;
   }
 
 .avatar {
