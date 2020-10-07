@@ -1,32 +1,38 @@
 [
   {
     "iLikeTo": "Set Goals and Directions",
-    "shortDesc": "Goal Setter",
-    "longDesc": "You are a robust leader. You have a vision and are highly driven in realizing them. You enjoy taking proactive control, setting the directions right for any given task and charting the path forward for action."
+    "shortDesc": "Goal-setter",
+    "longDesc": "You are a robust leader. You have a vision and are highly driven in realizing them. You enjoy taking proactive control, setting the directions right for any given task and charting the path forward for action.",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis"
   },
   {
-    "iLikeTo": "Generate Solutions to Problems",
+    "iLikeTo": "Generate Solution to Problems",
     "shortDesc": "Problem Solver",
-    "longDesc": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions."
+    "longDesc": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions.",
+    "skills": "Data Analysis,Critical Thinking,Negotiation,Programming,Research"
   },
   {
     "iLikeTo": "Think about How to Deliver Solutions to more people",
     "shortDesc": "Connector",
-    "longDesc": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain."
+    "longDesc": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain.",
+    "skills": "Public Speaking,Marketing,Copywriting,Media Editing,Teaching,Developing Human Relations"
   },
   {
     "iLikeTo": "Think about opportunities and risks of possible solutions",
     "shortDesc": "Analyst",
-    "longDesc": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement"
+    "longDesc": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where theren are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement",
+    "skills": "Critical Thinking,Statistics,Mindfulness,Strategic Vision,Active Listening,Data Modelling"
   },
   {
     "iLikeTo": "Create things that improve lives",
     "shortDesc": "Creator",
-    "longDesc": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change."
+    "longDesc": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change.",
+    "skills": "Data Modelling,Entrepreneurship,Design Thinking,Engineering,Ethical Product Making,Programming"
   },
   {
     "iLikeTo": "Make information accessible",
     "shortDesc": "Enabler",
-    "longDesc": "You believe in data-driven approaches, thinking logically about things through in this information age. You enjoy sharing useful information and insights in a clear and understandable manner with others, availing valuable insight to others which may help them make better and more well-informed decisions."
+    "longDesc": "You believe in data-driven approaches, thinking logically about things through in this information age. You enjoy sharing useful information and insights in a clear and understandable manner with others, availing valuable insight to others which may help them make better and more well-informed decisions.",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social Media,Public Speaking"
   }
 ]
