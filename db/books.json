@@ -1,0 +1,352 @@
+[
+  {
+    "name": "The Seven Habits of Highly Effective People",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Stephen R Covey",
+    "image_link": "https://prodimage.images-bn.com/pimages/9781451639612_p0_v7_s1200x630.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The Lean Startup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Eric Ries",
+    "image_link": "https://kbimages1-a.akamaihd.net/5c5e77cc-1fb9-410b-a735-de95a9a5dd40/1200/1200/False/the-lean-startup-1.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "How to win friends and influence people",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Dale Carnegie",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/41AKuWAA8yL._SX319_BO1,204,203,200_.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The Art Of War",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Sun Tzu",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71Ow6MUOx2L.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The design thinking playbook",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Michael Lewrick",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81Jlyd43wrL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Fight like a mother",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Shannon Watts",
+    "image_link": "https://providenceonline.com/uploads/original/20190802125545-635d-51PNXl8MCUL._SX311_BO1,204,203,200_.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "From third world to first",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Lee Kuan Yew",
+    "image_link": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546080459i/144409._UY2130_SS2130_.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Larger than Life",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Belinda Lee",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/91qBJE7fgzL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Building social business",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Muhammad Yunus",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81oVQaiPseL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The design of everyday things",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Don Norman",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81zpLhP1gWL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Influencer: Building your personal brand in the age of social media",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Brittany Hennesy",
+    "image_link": "https://i5.walmartimages.com/asr/2c8ea225-adb2-4e9e-89ab-b6ff3271d812_1.879b2b930a8e557b1d4fe337f2a42418.jpeg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Blue ocean strategy",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Chan Kim",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/91YCWH4jFdL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The intelligent investor",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Benjamin Graham",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/91yj3mbz4JL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Arts & Numbers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Elaine Luttrul",
+    "image_link": "https://lh3.googleusercontent.com/proxy/J2DcH4v3ARyaeDC6dLtFDsuMWdOOJWwkbP7JzbIjN6O9BzXt-EwFIOwgwpiRDeNbAU7DLftPr0ggU4ISaK7s0xePFbm0buVSNoeV1uxzBXaAnX1LzyRSARZD8A",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Save the cat",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Blake Snyder",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71rEgfe796L.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "How to build a billion dollar app",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "George Berkowski",
+    "image_link": "https://hachette.imgix.net/books/9780349401379.jpg?auto=compress,format",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Human compatible",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Stuart Russell",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81Ka09kEm5L.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Risk analysis: A quantitative guide",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "David Vose",
+    "image_link": "https://mediacdn.nhbs.com/jackets/jackets_resizer_xlarge/18/182951.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Emotional Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Don Norman",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71dVma-xToL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "100 Things Every Designer Needs to Know About People",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Susan Weinschenk",
+    "image_link": "https://image.isu.pub/200716072409-2900d618615c06b287021d3297b2f32b/jpg/page_1.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Singapore's Lost Son",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Kaiwen Leong",
+    "image_link": "https://kbimages1-a.akamaihd.net/d8267a3e-bc75-43dc-8b87-897b3093a562/1200/1200/False/singapore-s-lost-son.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The Mckinsey way",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Ethan M Rasiel",
+    "image_link": "https://image.ebooks.com/previews/000/000800/000800763/000800763.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Option B",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Sheryl Sandberg & Adam Grant",
+    "image_link": "https://wsp.wharton.upenn.edu/wp-content/uploads/2016/11/display-25.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Freakonomics, SuperFreakonomics\nThink Like A Freak",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Steven Levitt & Stephen Dubner",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71uGp5GrqkL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The art of public speaking",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Dale Carnegie",
+    "image_link": "https://kbimages1-a.akamaihd.net/2eec9f5d-bf27-477e-8abe-9b2595ae7443/1200/1200/False/the-art-of-public-speaking-69.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Stillness is the key",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Ryan Holiday",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71vmtRjhnmL._AC_SL1500_.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Good to Great",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "James C Collin",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/913d0uqSoPL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Surrounded by Idiots",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Thomas Erikson",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71K7nN6Mu+L.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Think Wits Win",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Soo Kok Leng",
+    "image_link": "https://cdn.shopify.com/s/files/1/2046/9261/products/9814747714_Think_Wits_Win_Cover_HR_1200x1200.jpg?v=1561111545",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The innovator's guide to growth",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Scott D Anthony",
+    "image_link": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328756629l/2641521.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Pleasure activism\nThe politics of feeling good",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Adrienne Maree Brown",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71TG+l6LsfL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The audacity of hope",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Barack Obama",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81N1ykvDuKL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Learning Service",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Claire Bennett",
+    "image_link": "https://www.travindy.com/wp-content/uploads/2018/10/learning-service-book-cover.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Good money",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Jonathan Self",
+    "image_link": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494319124i/35102224._UY2561_SS2561_.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Hooked - How to build habit-forming products",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Nir Eyal",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81FU4zAWJvL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Instagram power",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Jason Miles",
+    "image_link": "https://www.oreilly.com/library/view/instagram-power-second/9781260453317/1260453316.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Drive",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Daniel H Pink",
+    "image_link": "https://d243y1uga1q3sn.cloudfront.net/assets/files/357596/drive-paperback-cover-9781786891709.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "This is marketing",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Seth Godin",
+    "image_link": "https://cdn2.penguin.com.au/covers/original/9780241370148.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "A random walk down wall street",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Burton Malkiel",
+    "image_link": "https://i.ytimg.com/vi/nU1qGuku-7k/maxresdefault.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Creative block",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Danielle Krysa",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81xfyoB0JAL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Oh Sh*t What Now?",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Craig Oldham",
+    "image_link": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftankmagazine.com%2Fissue-75%2Fbooks%2Foh-shstart-what-now%2F&psig=AOvVaw1FmBTKhIZMMXJ2VBBczWKv&ust=1602051052686000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC7irGnn-wCFQAAAAAdAAAAABAD",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Adventures in the screen trade",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "William Goldman",
+    "image_link": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9780446391177.jpg?fit=1675%2C2600",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Design sprint",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Richard Banfield",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/71y2wZgkJ6L.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "AI Superpowers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Kai-Fu Lee",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/81JjMSKLeLL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Thinking fast and slow",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Daniel Kahneman",
+    "image_link": "https://matthewstrom.com/images/book-thinking-fast-and-slow.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Don’t make me think",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Steve Krug",
+    "image_link": "https://www.nj.com/resizer/WjfpQcgEXhpM7Dz0VO1srMK3ntg=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/business_impact/photo/krugjpg-e3917f811f939521.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Originals",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Adam Grant",
+    "image_link": "https://mphimages.s3.amazonaws.com/b71db2849e4e4ba39b64bb09e8483819.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "The lean product playbook",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Dan Olsen",
+    "image_link": "https://miro.medium.com/max/2580/1*5IP0k_-6feeqrk9PJY-pKQ.png",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Capital in the 21st century",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Thomas Piketty",
+    "image_link": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2014/03/21/Outlook/Images/bw0330051395440401.jpg?t=20170517",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  },
+  {
+    "name": "Life without limits",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
+    "author": "Nick Vujicic",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/91l+4n9jHhL.jpg",
+    "link": "https://www.franklincovey.com/the-7-habits.html"
+  }
+]

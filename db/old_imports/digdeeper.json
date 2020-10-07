@@ -1,0 +1,32 @@
+[
+  {
+    "iLikeTo": "Set Goals and Directions",
+    "shortDesc": "Goal Setter",
+    "longDesc": "You are a robust leader. You have a vision and are highly driven in realizing them. You enjoy taking proactive control, setting the directions right for any given task and charting the path forward for action."
+  },
+  {
+    "iLikeTo": "Generate Solutions to Problems",
+    "shortDesc": "Problem Solver",
+    "longDesc": "You are a sharp problem solver. You have critical thinking abilities and carefully draft solutions to solve problems. You carefully consider different tenets of an issue before implementing logical solutions."
+  },
+  {
+    "iLikeTo": "Think about How to Deliver Solutions to more people",
+    "shortDesc": "Connector",
+    "longDesc": "You have a heart for others. You are empathetic and care about those around you. You like to identify what problems that those around you might face and find ways to bring solutions to them, maximizing gain and minimizing pain."
+  },
+  {
+    "iLikeTo": "Think about opportunities and risks of possible solutions",
+    "shortDesc": "Analyst",
+    "longDesc": "You are a highly pragmatic and logical thinker who is able to view things from multiple perspectives. You like to be balanced about things and where there are solutions to problems or answers to questions, you consider both sides before making a reasoned judgement"
+  },
+  {
+    "iLikeTo": "Create things that improve lives",
+    "shortDesc": "Creator",
+    "longDesc": "You are creative and adventurous in your approach to things. You have a heart for others and seek to improve the lives of those around you. You enjoy building things, products, services and anything that contributes to the lives of others and brings about positive change."
+  },
+  {
+    "iLikeTo": "Make information accessible",
+    "shortDesc": "Enabler",
+    "longDesc": "You believe in data-driven approaches, thinking logically about things through in this information age. You enjoy sharing useful information and insights in a clear and understandable manner with others, availing valuable insight to others which may help them make better and more well-informed decisions."
+  }
+]
