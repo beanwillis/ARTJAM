@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect
 from flask_cors import CORS
 
-from services.emailer import sendReport
+# from services.emailer import sendReport
 
 app = Flask(__name__)
 
@@ -43,6 +43,18 @@ def avatar():
 def confirmAvatar():
     return render_template("confirm-avatar.html")
 
+@app.route("/wheel1")
+def wheel1():
+    return render_template("wheel1.html")
+
+@app.route("/wheel2")
+def wheel2():
+    return render_template("wheel2.html")
+
+@app.route("/wheel3")
+def wheel3():
+    return render_template("wheel3.html")
+
 @app.route("/home-activities")
 def homeActivities():
     return render_template("activities-at-home.html")
@@ -54,6 +66,10 @@ def campusActivities():
 @app.route("/digging-deeper")
 def diggingDeeper():
     return render_template("digging-deeper.html")
+
+@app.route("/quiz-end")
+def quizEnd():
+    return render_template("quiz-end.html")
 
 @app.route("/final-report")
 def finalReport():
