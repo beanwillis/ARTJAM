@@ -43,17 +43,17 @@ def avatar():
 def confirmAvatar():
     return render_template("confirm-avatar.html")
 
-@app.route("/wheel1")
-def wheel1():
-    return render_template("wheel1.html")
+@app.route("/interest")
+def interest():
+    return render_template("interest.html")
 
-@app.route("/wheel2")
-def wheel2():
-    return render_template("wheel2.html")
+@app.route("/skill")
+def skill():
+    return render_template("skill.html")
 
-@app.route("/wheel3")
-def wheel3():
-    return render_template("wheel3.html")
+@app.route("/issue")
+def issue():
+    return render_template("issue.html")
 
 @app.route("/home-activities")
 def homeActivities():

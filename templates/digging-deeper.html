@@ -1,64 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARTJAM - Digging Deeper</title>
-</head>
-<body style="background-color: #fdf6ee;font-family: 'Righteous', cursive;">
-  <div class="container mt-4">
-    <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+{% extends "layout.html" %} {% block title %}Digging Deeper{% endblock %} {%
+block content %}
+<div class="container mt-4">
+  <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+  <h2 class="text-center display-5 mt-3 mb-3">Digging Deeper</h2>
+  <img src="../static/img/insp-bg.jpg" style="width: 100%;"/>
+  <p class="display-5 mt-3 mb-4 text-center">Everyone has different approaches toward life. What's your favorite?</p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal1" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal2" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal3" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal4" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+      <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" data-toggle="modal" data-target="#modal6" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
     </div>
 
-    <h4 class="text-center display-4">Digging Deeper</h4>
-    <img src="../static/img/insp-bg.jpg" style="width: 100%;"/>
-    <p class="display-5 mt-3 mb-4 text-center">Everyone has different approaches toward life. What's your favorite?</p>
-    <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Approach 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Approach 2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">Approach 3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal4Label">Approach 4</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal5Label">Approach 5</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal6Label">Approach 6</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="row justify-content-center">
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
+    <div class="row">
+      <div class="col padding-0" align="left">
+          <button onclick="window.location.href='/campus-activities'" style="border: none;background-color: #fdf6ee;">
+            <img
+            width="50px"
+            style="margin-top: 5px; margin-bottom: 20px"
+            src="../static/img/back.svg"
+            />
+          </button>
       </div>
-      <div class="row justify-content-center">
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
-      </div>
-      <div class="row justify-content-center">
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
-        <button type="button" class="btn text-white mb-3 pt-3 pb-3 mr-3 col-xs-5" style="background-color:#4a8bae;font-size: 15px;">Approach</button>
-      </div>
-      
-      <div class="row">
-        <div class="col padding-0" align="left">
-            <button onclick="window.location.href='/campus-activities'" style="border: none;background-color: #fdf6ee;">
+      <div class="col padding-0" align="right">
+          <button onclick="window.location.href='/quiz-end'" style="border: none;background-color: #fdf6ee;">
               <img
               width="50px"
               style="margin-top: 5px; margin-bottom: 20px"
-              src="../static/img/back.svg"
+              src="../static/img/next.svg"
               />
-            </button>
-        </div>
-        <div class="col padding-0" align="right">
-            <button onclick="window.location.href='/quiz-end'" style="border: none;background-color: #fdf6ee;">
-                <img
-                width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
-                src="../static/img/next.svg"
-                />
-            </button>
-        </div>
+          </button>
       </div>
-    </div>    
-  </div>
-</body>
-</html>
+    </div>
+  </div>    
+</div>
+{% endblock %}
