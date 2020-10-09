@@ -17,7 +17,9 @@
 
         <div id="" class="container text-center">
             <h2 class="bg-orange text-white">
-                Your Changemaking Persona is CEO
+                Your Changemaking Persona is 
+            <h2 id="finalpersona" class="bg-light-green text-white"></h2>
+                
             </h2>
             <br>
         </div>
@@ -31,28 +33,12 @@
         </div>
 
         <div id="personaTitle" class="container text-center">
-
-            <div class="text-left">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam enim auctor tincidunt viverra. Praesent a pretium dui. In et eros at augue mollis placerat. </p>
-                <p>Quisque eget mi venenatis, sodales risus eget, pretium tellus. Donec nec massa est. Nullam dapibus ex non rhoncus venenatis. </p>
-                    Donec accumsan, augue id ultricies malesuada, urna diam faucibus odio, eget congue nibh purus sit amet orci. Morbi efficitur nibh quis vulputate lacinia. Phasellus malesuada finibus eros, sed consequat dolor. Aliquam sagittis nulla at imperdiet finibus. Curabitur vitae felis tincidunt odio tempor blandit vehicula ac dui. Nunc egestas lorem eget viverra suscipit. Phasellus nec turpis semper, tempus nunc a, maximus purus. Maecenas mattis quam eu est egestas porttitor. Vestibulum porttitor augue orci, nec aliquam dolor faucibus vitae.
-                </p>
-                <p>
-                    Vestibulum sed condimentum mi. Sed egestas interdum dui sed mattis. Integer id dapibus ipsum. Vivamus laoreet sit amet tortor id commodo. Ut fringilla felis quis erat congue, posuere imperdiet tortor scelerisque. Fusce fringilla dapibus nisl, posuere faucibus tellus. Vestibulum molestie congue nisl at commodo. Nam malesuada erat eget posuere sodales.
-                </p>
+            
+            <div class="text-center">
+                <p id="finalpersonaDesc"></p>
             </div>
         </div>
-        <div id="emailMe" class="text-center">
-            <form style="width:80%; margin:auto;">
-                <div class="form-group">
-                    <input type="email" id="inputEmail" aria-describedby="emailHelp" class="input-text form-control form-control-lg" placeholder="Enter your email">
-                </div>
-                <button class="btn btn-primary bg-blue" onclick="window.location.href='#'" type="button" >
-                    Send Me My Report!
-                  </button>
-              </form>
-        </div>
+
         <br>
         <div class="row">
             <div class="col">
@@ -72,6 +58,32 @@
 
 {% endblock %}
 
-{% block scripts %}
 
+{% block scripts %}
+<script>
+
+    $(async() => {
+        // var interimPersona = sessionStorage.getItem("interimPersona");
+        // console.log(interimPersona);
+
+        // var iLikeTo = sessionStorage.getItem("iLikeTo");
+        // console.log(iLikeTo);
+        var mockInterimPersona = "Tech"
+        var mockILikeTo = "I like to generate solutions to problems"
+        // http://finalpersona.artjam-287602.et.r.appspot.com/get_final_persona/Tech/I like to generate solutions to problems
+        var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_final_persona/" + mockInterimPersona + "/" + mockILikeTo)
+        var data = await response.json();
+        
+        var finalpersona = data["data"]["finalPersona"];
+        sessionStorage.setItem("finalpersona", finalpersona);
+        var finalpersonaDesc = data["data"]["description"];
+        
+        $("#finalpersona").append(finalpersona);
+        $("#finalpersonaDesc").append(finalpersonaDesc);
+
+    });
+
+
+    
+</script>
 {% endblock %}
