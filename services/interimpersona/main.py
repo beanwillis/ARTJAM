@@ -19,6 +19,8 @@ firebase_admin.initialize_app(cred, {
 
 db = firestore.client()
 
+CORS(app)
+
 @app.route("/get_all_interim_personas")
 def get_all_interim_personas():
     interim_ref = db.collection(u"InterimPersona")

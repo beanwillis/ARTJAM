@@ -1,0 +1,76 @@
+{% block style %}
+<style>
+    .btn-secondary:focus {
+        background-color: #ea755a !important;
+        color: white;
+        box-shadow: none!important;
+        border: none;
+    }
+</style>
+{% endblock %}
+
+{% extends "layout.html" %} {% block title %}Skill{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p class="lead text-center mt-3">Please select a <strong>skill</strong> that is most relevant to you.</p>
+    <form action="issue.html" method="get">
+        <div class="btn-group-vertical mt-10" style="width:100%">
+            <button id="social" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+                <h4 class="display-5">Social</h4>
+                <p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </button>
+            <button id="creative" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+                <h4 class="display-5">Creative</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </button>
+            <button id="business" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+                <h4 class="display-5">Business</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </button>
+            <button id="leadership" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+                <h4 class="display-5">Leadership</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </button>
+            <button id="technology" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+                <h4 class="display-5">Technology</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col padding-0" align="left">
+            <button onclick="window.location.href='/interest'" style="border: none;background-color: #fdf6ee;">
+                <img
+                width="50px"
+                style="margin-top: 5px; margin-bottom: 20px"
+                src="../static/img/back.svg"
+                />
+            </button>
+        </div>
+        <div class="col padding-0" align="right">
+            <button onclick="window.location.href='/issue'" style="border: none;background-color: #fdf6ee;">
+                <img
+                width="50px"
+                style="margin-top: 5px; margin-bottom: 20px"
+                src="../static/img/next.svg"
+                />
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function selection(clicked) {
+        // var url = "wheel3.php?skill=" + clicked;
+        // document.location.href = url;
+        sessionStorage.setItem("skill", clicked);
+    }
+</script>
+{% endblock %}
