@@ -21,11 +21,11 @@
             </h2>
             <br>
         </div>
-        <div id="face" class="">
+        <div id="report-face" class="">
             <div class="row bg-light-blue" style="margin-top: -20px;">
                 <div class="col padding-0 image-choice" align="center" >
               
-              <img width="300px" src="{{ url_for('static', filename = 'img/avatar-1.svg') }}">
+              <img id="chosen-img" src="{{ url_for('static', filename = 'img/avatar-1.svg') }}">
                 </div>
             </div>
         </div>
@@ -73,5 +73,15 @@
 {% endblock %}
 
 {% block scripts %}
+<script>
+    var chosen = sessionStorage.getItem("chosen-avatar");
+    var persona = "CEO"
+    var new_img = "/static/img/" + chosen + "-" + persona + ".png"
+    console.log(document.getElementById("chosen-img").src)
+    
+    document.getElementById("chosen-img").src = new_img;
 
+
+    
+</script>
 {% endblock %}
