@@ -87,13 +87,10 @@ def get_books_by_final_persona(finalPersona):
             books = doc.to_dict()["books"]
 
         book_list = books.split(",")
-        for b in book_list:
-            b.replace("\\n", " ")
-
         book_details = []
 
         for b in book_list:
-            book_docs = final_ref.where("name", "==", b).stream()
+            book_docs = final_ref.where("id", "==", b).stream()
             for b_doc in book_docs:
                 book_details.append(b_doc.to_dict())
 
@@ -139,7 +136,7 @@ def get_skills_by_final_persona(finalPersona):
         skill_list = skills.split(",")
         skill_details = []
         for b in skill_list:
-            skill_docs = final_ref.where("Skills", "==", b).stream()
+            skill_docs = final_ref.where("id", "==", b).stream()
             for b_doc in skill_docs:
                 skill_details.append(b_doc.to_dict())
 

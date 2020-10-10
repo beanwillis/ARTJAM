@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "The Seven Habits of Highly Effective People",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Stephen R Covey",
@@ -8,7 +7,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 2,
     "name": "The Lean Startup",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Eric Ries",
@@ -16,7 +14,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 3,
     "name": "How to win friends and influence people",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Dale Carnegie",
@@ -24,7 +21,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 4,
     "name": "The Art Of War",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Sun Tzu",
@@ -32,7 +28,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 5,
     "name": "The design thinking playbook",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Michael Lewrick",
@@ -40,7 +35,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 6,
     "name": "Fight like a mother",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Shannon Watts",
@@ -48,7 +42,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 7,
     "name": "From third world to first",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Lee Kuan Yew",
@@ -56,7 +49,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 8,
     "name": "Larger than Life",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Belinda Lee",
@@ -64,7 +56,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 9,
     "name": "Building social business",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Muhammad Yunus",
@@ -72,7 +63,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 10,
     "name": "The design of everyday things",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Don Norman",
@@ -80,7 +70,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 11,
     "name": "Influencer: Building your personal brand in the age of social media",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Brittany Hennesy",
@@ -88,7 +77,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 12,
     "name": "Blue ocean strategy",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Chan Kim",
@@ -96,7 +84,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 13,
     "name": "The intelligent investor",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Benjamin Graham",
@@ -104,7 +91,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 14,
     "name": "Arts & Numbers",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Elaine Luttrul",
@@ -112,7 +98,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 15,
     "name": "Save the cat",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Blake Snyder",
@@ -120,7 +105,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 16,
     "name": "How to build a billion dollar app",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "George Berkowski",
@@ -128,7 +112,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 17,
     "name": "Human compatible",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Stuart Russell",
@@ -136,7 +119,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 18,
     "name": "Risk analysis: A quantitative guide",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "David Vose",
@@ -144,7 +126,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 19,
     "name": "Emotional Design",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Don Norman",
@@ -152,7 +133,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 20,
     "name": "100 Things Every Designer Needs to Know About People",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Susan Weinschenk",
@@ -160,7 +140,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 21,
     "name": "Singapore's Lost Son",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Kaiwen Leong",
@@ -168,7 +147,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 22,
     "name": "The Mckinsey way",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Ethan M Rasiel",
@@ -176,7 +154,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 23,
     "name": "Option B",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Sheryl Sandberg & Adam Grant",
@@ -184,15 +161,13 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 24,
-    "name": "Freakonomics -SuperFreakonomics\nThink Like A Freak",
+    "name": "Freakonomics, SuperFreakonomics\nThink Like A Freak",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Steven Levitt & Stephen Dubner",
     "image_link": "https://images-na.ssl-images-amazon.com/images/I/71uGp5GrqkL.jpg",
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 25,
     "name": "The art of public speaking",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Dale Carnegie",
@@ -200,7 +175,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 26,
     "name": "Stillness is the key",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Ryan Holiday",
@@ -208,7 +182,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 27,
     "name": "Good to Great",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "James C Collin",
@@ -216,7 +189,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 28,
     "name": "Surrounded by Idiots",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Thomas Erikson",
@@ -224,7 +196,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 29,
     "name": "Think Wits Win",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Soo Kok Leng",
@@ -232,7 +203,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 30,
     "name": "The innovator's guide to growth",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Scott D Anthony",
@@ -240,7 +210,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 31,
     "name": "Pleasure activism\nThe politics of feeling good",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Adrienne Maree Brown",
@@ -248,7 +217,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 32,
     "name": "The audacity of hope",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Barack Obama",
@@ -256,7 +224,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 33,
     "name": "Learning Service",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Claire Bennett",
@@ -264,7 +231,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 34,
     "name": "Good money",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Jonathan Self",
@@ -272,7 +238,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 35,
     "name": "Hooked - How to build habit-forming products",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Nir Eyal",
@@ -280,7 +245,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 36,
     "name": "Instagram power",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Jason Miles",
@@ -288,7 +252,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 37,
     "name": "Drive",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Daniel H Pink",
@@ -296,7 +259,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 38,
     "name": "This is marketing",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Seth Godin",
@@ -304,7 +266,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 39,
     "name": "A random walk down wall street",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Burton Malkiel",
@@ -312,7 +273,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 40,
     "name": "Creative block",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Danielle Krysa",
@@ -320,7 +280,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 41,
     "name": "Oh Sh*t What Now?",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Craig Oldham",
@@ -328,7 +287,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 42,
     "name": "Adventures in the screen trade",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "William Goldman",
@@ -336,7 +294,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 43,
     "name": "Design sprint",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Richard Banfield",
@@ -344,7 +301,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 44,
     "name": "AI Superpowers",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Kai-Fu Lee",
@@ -352,7 +308,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 45,
     "name": "Thinking fast and slow",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Daniel Kahneman",
@@ -360,7 +315,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 46,
     "name": "Don’t make me think",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Steve Krug",
@@ -368,7 +322,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 47,
     "name": "Originals",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Adam Grant",
@@ -376,7 +329,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 48,
     "name": "The lean product playbook",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Dan Olsen",
@@ -384,7 +336,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 49,
     "name": "Capital in the 21st century",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Thomas Piketty",
@@ -392,7 +343,6 @@
     "link": "https://www.franklincovey.com/the-7-habits.html"
   },
   {
-    "id": 50,
     "name": "Life without limits",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec interdum quam, ac condimentum est. Donec pharetra ante sit amet libero mattis, vel placerat leo egestas. Aenean urna nulla, vestibulum in nisl vel, consectetur vulputate lorem.",
     "author": "Nick Vujicic",

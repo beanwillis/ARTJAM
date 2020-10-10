@@ -4,8 +4,8 @@
     "likeTo": "I like to set goals and directions",
     "finalPersona": "Business Leader",
     "description": "You are a visionary, a person well-versed in business acumen. You make robust\ndecisions for those under your charge.",
-    "books": "1,26",
-    "skills": "1,2,3,4,5,6",
+    "books": "The Seven Habits of Highly Effective People,Stillness is the key",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis",
     "faculty": ""
   },
   {
@@ -13,8 +13,8 @@
     "likeTo": "I like to generate solutions to problems",
     "finalPersona": "Business Developer",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "2,27",
-    "skills": "6,16,7,8,25,9",
+    "books": "The Lean Startup,Good to Great",
+    "skills": "Data Analysis,Critical Thinking,Design Thinking,Negotiation,Programming,Research",
     "faculty": "Reddi Kotha (reddikotha@smu.edu.sg)"
   },
   {
@@ -22,8 +22,8 @@
     "likeTo": "I Like to think about how to deliver solutions to more people",
     "finalPersona": "Communicator",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "3,28",
-    "skills": "10,11,12,13,14,15",
+    "books": "How to win friends and influence people,Surrounded by Idiots",
+    "skills": "Public speaking,Marketing,Copywriting,Media Editing ,Teaching,Developing Human Relations",
     "faculty": "Sumathi Krishna\nHavovi Joshi"
   },
   {
@@ -31,8 +31,8 @@
     "likeTo": "I like to think about risks and opportunities of possible solutions",
     "finalPersona": "Strategic analyst",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "4,29",
-    "skills": "16,17,18,19,20,21",
+    "books": "The Art Of War,Think Wits Win",
+    "skills": "Critical thinking,Statistics,Mindfulness,Strategic vision,Active Listening,Data Modelling",
     "faculty": "David Gomulya (dgomulya@smu.edu.sgd)"
   },
   {
@@ -40,8 +40,8 @@
     "likeTo": "I like to create things that improve lives",
     "finalPersona": "Creative businessperson",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "5,30",
-    "skills": "21,22,7,23,24,25",
+    "books": "The design thinking playbook,The innovator's guide to growth",
+    "skills": "Data modelling,Entrepreneurship,Design thinking,Engineering,Ethical Product Making,Programming",
     "faculty": "Angela Leung"
   },
   {
@@ -49,8 +49,8 @@
     "likeTo": "I like to make information accessible",
     "finalPersona": "Communicator",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "3,28",
-    "skills": "26,27,28,25,29,10",
+    "books": "How to win friends and influence people,Surrounded by Idiots",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social media,Public speaking",
     "faculty": "Sumathi Krishna\nHavovi Joshi"
   },
   {
@@ -58,8 +58,8 @@
     "likeTo": "I like to set goals and directions",
     "finalPersona": "Social Activist",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "6,31",
-    "skills": "1,2,3,4,5,6",
+    "books": "Fight like a mother,Pleasure activism\nThe politics of feeling good",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis",
     "faculty": ""
   },
   {
@@ -67,8 +67,8 @@
     "likeTo": "I like to generate solutions to problems",
     "finalPersona": "Politician",
     "description": "You have a sharp eye for how things look and do your best to make things \nlook good.",
-    "books": "7,32",
-    "skills": "6,16,7,8,25,9",
+    "books": "From third world to first ,The audacity of hope",
+    "skills": "Data Analysis,Critical Thinking,Design Thinking,Negotiation,Programming,Research",
     "faculty": "John Donaldson"
   },
   {
@@ -76,8 +76,8 @@
     "likeTo": "I Like to think about how to deliver solutions to more people",
     "finalPersona": "Social volunteer",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "8,33",
-    "skills": "10,11,12,13,14,15",
+    "books": "Larger than Life,Learning Service",
+    "skills": "Public speaking,Marketing,Copywriting,Media Editing ,Teaching,Developing Human Relations",
     "faculty": ""
   },
   {
@@ -85,8 +85,8 @@
     "likeTo": "I like to think about risks and opportunities of possible solutions",
     "finalPersona": "Social Entrepreneur",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "9,34",
-    "skills": "16,17,18,19,20,21",
+    "books": "Building social business,Good money",
+    "skills": "Critical thinking,Statistics,Mindfulness,Strategic vision,Active Listening,Data Modelling",
     "faculty": "Kenneth Goh (kennethgoh@smu.edu.sg)"
   },
   {
@@ -94,8 +94,8 @@
     "likeTo": "I like to create things that improve lives",
     "finalPersona": "Product Designer",
     "description": "You have a sharp eye for how things look and do your best to make things \nlook good.",
-    "books": "10,35",
-    "skills": "21,22,7,23,24,25",
+    "books": "The design of everyday things,Hooked - How to build habit-forming products",
+    "skills": "Data modelling,Entrepreneurship,Design thinking,Engineering,Ethical Product Making,Programming",
     "faculty": "Srinivas K. Reddy (sreddy@smu.edu.sgd)"
   },
   {
@@ -103,8 +103,8 @@
     "likeTo": "I like to make information accessible",
     "finalPersona": "Social Media Influencer",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "11,36",
-    "skills": "26,27,28,25,29,10",
+    "books": "Influencer: Building your personal brand in the age of social media,Instagram power",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social media,Public speaking",
     "faculty": ""
   },
   {
@@ -112,8 +112,8 @@
     "likeTo": "I like to set goals and directions",
     "finalPersona": "Manager",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "1,37",
-    "skills": "1,2,3,4,5,6",
+    "books": "The Seven Habits of Highly Effective People,Drive",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis",
     "faculty": "Gary Greguras"
   },
   {
@@ -121,8 +121,8 @@
     "likeTo": "I like to generate solutions to problems",
     "finalPersona": "Designer",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "5,10",
-    "skills": "6,16,7,8,25,9",
+    "books": "The design thinking playbook,The design of everyday things",
+    "skills": "Data Analysis,Critical Thinking,Design Thinking,Negotiation,Programming,Research",
     "faculty": ""
   },
   {
@@ -130,8 +130,8 @@
     "likeTo": "I Like to think about how to deliver solutions to more people",
     "finalPersona": "Marketing Executive",
     "description": "You have a sharp eye for how things look and do your best to make things \nlook good.",
-    "books": "12,38",
-    "skills": "10,11,12,13,14,15",
+    "books": "Blue ocean strategy,This is marketing",
+    "skills": "Public speaking,Marketing,Copywriting,Media Editing ,Teaching,Developing Human Relations",
     "faculty": "Hannah H. Chang (hannahchang@smu.edu.sg)"
   },
   {
@@ -139,8 +139,8 @@
     "likeTo": "I like to think about risks and opportunities of possible solutions",
     "finalPersona": "Market analyst",
     "description": "You are watchful of the trends and movements in the market, ready to take \ndriven, proactive action wherever necessary.",
-    "books": "13,39",
-    "skills": "16,17,18,19,20,21",
+    "books": "The intelligent investor,A random walk down wall street",
+    "skills": "Critical thinking,Statistics,Mindfulness,Strategic vision,Active Listening,Data Modelling",
     "faculty": ""
   },
   {
@@ -148,8 +148,8 @@
     "likeTo": "I like to create things that improve lives",
     "finalPersona": "Artist",
     "description": "You make artistic contributions and bring artistic value wherever you go.",
-    "books": "14,40",
-    "skills": "21,22,7,23,24,25",
+    "books": "Arts & Numbers,Creative block",
+    "skills": "Data modelling,Entrepreneurship,Design thinking,Engineering,Ethical Product Making,Programming",
     "faculty": ""
   },
   {
@@ -157,8 +157,8 @@
     "likeTo": "I like to make information accessible",
     "finalPersona": "Graphic designer",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "5,41",
-    "skills": "26,27,28,25,29,10",
+    "books": "The design thinking playbook,Oh Sh*t What Now?",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social media,Public speaking",
     "faculty": ""
   },
   {
@@ -166,26 +166,26 @@
     "likeTo": "I like to set goals and directions",
     "finalPersona": "Screenwriter",
     "description": "You are an avid storyteller, inspiring wide audiences through the reach and influence\nof the media.",
-    "books": "15,42",
-    "skills": "1,2,3,4,5,6",
-    "faculty": 0
+    "books": "Save the cat,Adventures in the screen trade",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis",
+    "faculty": ""
   },
   {
     "interimPersona": "Tech",
     "likeTo": "I like to generate solutions to problems",
     "finalPersona": "App Developer",
     "description": "You believe in the power of technology, harnessing and using it to enable \nand empower others through the use of applications.",
-    "books": "16,43",
-    "skills": "6,16,7,8,25,9",
-    "faculty": "#N/A"
+    "books": "How to build a billion dollar app,Design sprint",
+    "skills": "Data Analysis,Critical Thinking,Design Thinking,Negotiation,Programming,Research",
+    "faculty": ""
   },
   {
     "interimPersona": "Tech",
     "likeTo": "I Like to think about how to deliver solutions to more people",
     "finalPersona": "AI Engineer",
     "description": "You are in control of technology's power. You contribute to the overall \ncapabilities of technology for various uses and applications.",
-    "books": "17,44",
-    "skills": "10,11,12,13,14,15",
+    "books": "Human compatible,AI Superpowers",
+    "skills": "Public speaking,Marketing,Copywriting,Media Editing ,Teaching,Developing Human Relations",
     "faculty": "Hady W. Lauw (hadywlauw@smu.edu.sg)"
   },
   {
@@ -193,17 +193,17 @@
     "likeTo": "I like to think about risks and opportunities of possible solutions",
     "finalPersona": "Risk Analyst",
     "description": "You have a sharp eye for how things look and do your best to make things \nlook good.",
-    "books": "18,45",
-    "skills": "16,17,18,19,20,21",
-    "faculty": 0
+    "books": "Risk analysis: A quantitative guide,Thinking fast and slow",
+    "skills": "Critical thinking,Statistics,Mindfulness,Strategic vision,Active Listening,Data Modelling",
+    "faculty": ""
   },
   {
     "interimPersona": "Tech",
     "likeTo": "I like to create things that improve lives",
     "finalPersona": "UX/UI",
     "description": "You believe in the utility of making things good on the internet, carefully structuring\nonline mediums and presenting them optimally for perusal by others.",
-    "books": "19,46",
-    "skills": "21,22,7,23,24,25",
+    "books": "Emotional Design,Don’t make me think",
+    "skills": "Data modelling,Entrepreneurship,Design thinking,Engineering,Ethical Product Making,Programming",
     "faculty": "Kotaro Hara (kotarohara@smu.edu.sg)"
   },
   {
@@ -211,8 +211,8 @@
     "likeTo": "I like to make information accessible",
     "finalPersona": "UX/UI",
     "description": "You believe in the utility of making things good on the internet, carefully structuring\nonline mediums and presenting them optimally for perusal by others.",
-    "books": "20,46",
-    "skills": "26,27,28,25,29,10",
+    "books": "100 Things Every Designer Needs to Know About People,Don’t make me think",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social media,Public speaking",
     "faculty": "Kotaro Hara (kotarohara@smu.edu.sg)"
   },
   {
@@ -220,8 +220,8 @@
     "likeTo": "I like to set goals and directions",
     "finalPersona": "CEO",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "21,47",
-    "skills": "1,2,3,4,5,6",
+    "books": "Singapore's Lost Son,Originals",
+    "skills": "Leadership,Responsibility,Developing Vision,Planning,Communication,Data Analysis",
     "faculty": "Ivy Ng (Singhealth CEO)"
   },
   {
@@ -229,26 +229,26 @@
     "likeTo": "I like to generate solutions to problems",
     "finalPersona": "Management Consultant",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "#N/A",
-    "skills": "6,16,7,8,25,9",
-    "faculty": 0
+    "books": "The Mckinsey way,Blue ocean shift",
+    "skills": "Data Analysis,Critical Thinking,Design Thinking,Negotiation,Programming,Research",
+    "faculty": ""
   },
   {
     "interimPersona": "Leadership",
     "likeTo": "I Like to think about how to deliver solutions to more people",
     "finalPersona": "COO",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "23,48",
-    "skills": "10,11,12,13,14,15",
-    "faculty": 0
+    "books": "Option B,The lean product playbook",
+    "skills": "Public speaking,Marketing,Copywriting,Media Editing ,Teaching,Developing Human Relations",
+    "faculty": ""
   },
   {
     "interimPersona": "Leadership",
     "likeTo": "I like to think about risks and opportunities of possible solutions",
     "finalPersona": "Economist",
     "description": "You are someone with a heart for making things better, driving positive change\nwherever you are.",
-    "books": "24,49",
-    "skills": "16,17,18,19,20,21",
+    "books": "Freakonomics, SuperFreakonomics\nThink Like A Freak,Capital in the 21st century",
+    "skills": "Critical thinking,Statistics,Mindfulness,Strategic vision,Active Listening,Data Modelling",
     "faculty": "Chang Pao Li (plchang@smu.edu.sg)"
   },
   {
@@ -256,8 +256,8 @@
     "likeTo": "I like to create things that improve lives",
     "finalPersona": "Social Entrepreneur",
     "description": "You have a sharp sense of risk and a critical mind. You make decisions and manage\nexpectations through data-driven approaches.",
-    "books": "9,34",
-    "skills": "21,22,7,23,24,25",
+    "books": "Building social business,Good money",
+    "skills": "Data modelling,Entrepreneurship,Design thinking,Engineering,Ethical Product Making,Programming",
     "faculty": "Kenneth Goh (kennethgoh@smu.edu.sg)"
   },
   {
@@ -265,8 +265,8 @@
     "likeTo": "I like to make information accessible",
     "finalPersona": "Motivational Speaker/Coach",
     "description": "You have a sharp eye for how things look and do your best to make things \nlook good.",
-    "books": "25,50",
-    "skills": "26,27,28,25,29,10",
+    "books": "The art of public speaking,Life without limits",
+    "skills": "UX/UI,Coaching,Arts & Music,Programming,Social media,Public speaking",
     "faculty": "Sumathi Krishna"
   }
 ]
