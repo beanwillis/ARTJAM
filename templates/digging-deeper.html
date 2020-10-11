@@ -70,7 +70,7 @@ block content %}
   </div>
 
   <h2 class="text-center display-5 mt-3 mb-3">Digging Deeper</h2>
-  <img src="../static/img/insp-bg.jpg" style="width: 100%;"/>
+  <img style="width: 100%;" src="{{ url_for('static', filename = 'img/stations/digging-deeper.svg') }}" />
   <p class="display-5 mt-3 mb-4 text-center">Everyone has different approaches toward life. What's your favorite?</p>
   <div class="container mb-3">
     <button type="button" id="button1" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal1" style="background-color: #4a8bae;font-size: 15px;"></button>
@@ -191,7 +191,7 @@ block content %}
     </div>
   </div>
 
-  <div class="row">
+  <div class="row ml-1 mr-1">
     <div class="col padding-0" align="left">
         <button onclick="window.location.href='/campus-activities'" style="border: none;background-color: #fdf6ee;">
           <img
