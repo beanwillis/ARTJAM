@@ -27,7 +27,7 @@
             <div class="row bg-light-blue" style="margin-top: -20px;">
                 <div class="col padding-0 image-choice" align="center" >
               
-              <img id="chosen-img" src="{{ url_for('static', filename = 'img/avatar-1.svg') }}">
+              <img id="chosen-img">
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
 <script>
     var chosen = sessionStorage.getItem("chosen-avatar");
     var persona = "CEO"
-    var new_img = "/static/img/" + chosen + "-" + persona + ".png"
+    var new_img = "/static/img/" + chosen + "-" + persona + ".svg"
     console.log(document.getElementById("chosen-img").src)
     
     document.getElementById("chosen-img").src = new_img;

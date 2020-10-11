@@ -76,13 +76,11 @@
 
 /* Report Screen */
 
-#report-face {
-    
-}
 
 #chosen-img {
-    padding: 50px 0px;
-    width: 200px;
+    margin-top: -20%;
+    margin-bottom: 5%;
+    width: 80%;
 }
 
 /* Avatar screens */
