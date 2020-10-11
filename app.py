@@ -67,9 +67,9 @@ def campusActivities():
 def diggingDeeper():
     return render_template("digging-deeper.html")
 
-@app.route("/quiz-end")
-def quizEnd():
-    return render_template("quiz-end.html")
+@app.route("/ascend")
+def ascend():
+    return render_template("ascend.html")
 
 @app.route("/final-report")
 def finalReport():
