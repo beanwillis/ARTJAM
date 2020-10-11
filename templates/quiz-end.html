@@ -1,3 +1,12 @@
+{% block scripts %}
+<script>
+    if(sessionStorage.getItem("iLikeTo") == null) {
+      alert("Please select an approach.");
+      document.location.href = "/digging-deeper";
+    }
+</script>
+{% endblock %}
+
 {% extends "layout.html" %} {% block title %}End of Quiz{% endblock %}
 {% block content %}
 <div class="container">

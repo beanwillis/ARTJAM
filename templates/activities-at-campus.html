@@ -1,3 +1,29 @@
+{% block scripts %}
+<script>
+  var interest = sessionStorage.getItem("interest");
+  var skill = sessionStorage.getItem("skill");
+  var issue = sessionStorage.getItem("issue");
+
+  async function start() {
+    var url = "http://interimpersona.artjam-287602.et.r.appspot.com/get_campus_activities_by_wheel/" + issue + "/" + skill + "/" + interest;
+    var response = await fetch(url);
+    var data = await response.json();
+    var activities = data["schoolActivities"];
+    var activitiesArr = activities.split(",");
+    document.getElementById("button1").innerHTML = activitiesArr[0];
+    document.getElementById("button2").innerHTML = activitiesArr[1];
+    document.getElementById("button3").innerHTML = activitiesArr[2];
+    document.getElementById("button4").innerHTML = activitiesArr[3];
+
+    document.getElementById("modal1Label").innerHTML = activitiesArr[0];
+    document.getElementById("modal2Label").innerHTML = activitiesArr[1];
+    document.getElementById("modal3Label").innerHTML = activitiesArr[2];
+    document.getElementById("modal4Label").innerHTML = activitiesArr[3];
+  }
+  start();
+</script>
+{% endblock %}
+
 {% extends "layout.html" %} {% block title %}Activities on Campus{% endblock %}
 {% block content %}
 <div class="container mt-4">
@@ -12,7 +38,7 @@
   <div
     id="carouselControls"
     class="carousel slide multi-item-carousel mt-4"
-    style="position: absolute; left: 0; right: 0;background-color: #b9d4d8;"
+    style="position: absolute; left: 0; right: 0;background-color: #fdf6ee;"
     data-interval="false"
   >
     <div class="carousel-inner">
@@ -57,9 +83,10 @@
   <br /><br /><br /><br /><br /><br /><br /><br/>
   <div class="container mb-3">
     <h4 class="text-center mb-4">Activities on Campus</h4>
-    <button type="button" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal1" style="background-color: #4a8bae;font-size: 20px;">Activity</button>
-    <button type="button" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal2" style="background-color: #4a8bae;font-size: 20px;">Activity</button>
-    <button type="button" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3" style="background-color: #4a8bae;font-size: 20px;">Activity</button>
+    <button type="button" id="button1" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal1" style="background-color: #4a8bae;font-size: 20px;"></button>
+    <button type="button" id="button2" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal2" style="background-color: #4a8bae;font-size: 20px;"></button>
+    <button type="button" id="button3" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3" style="background-color: #4a8bae;font-size: 20px;"></button>
+    <button type="button" id="button4" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3" style="background-color: #4a8bae;font-size: 20px;"></button>
   </div>
   
   <!-- Modal -->
@@ -67,7 +94,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Activity 1</h5>
+          <h5 class="modal-title" id="modal1Label"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -82,7 +109,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal2Label">Activity 2</h5>
+          <h5 class="modal-title" id="modal2Label"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -97,7 +124,22 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal3Label">Activity 3</h5>
+          <h5 class="modal-title" id="modal3Label"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

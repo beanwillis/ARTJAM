@@ -21,29 +21,29 @@
     <p class="lead text-center mt-3">Please select an <strong>issue</strong> that is most relevant to you.</p>
     <form action="activities-at-home.html" method="get">
         <div class="btn-group-vertical mt-10" style="width:100%">
-            <button id="education" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Education And Mobility" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Education & Mobility</h4>
                 <p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="equality" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Equality and Diversity" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Equality & Diversity</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="environment" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Environment And Sustainability" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Environment & Sustainability</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="health" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Health and Well-Being" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Health & Wellbeing</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="cybersecurity" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Cyberspace" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Cybersecurity</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
         </div>
     </form>
-    <div class="row">
+    <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
             <button onclick="window.location.href='/skill'" style="border: none;background-color: #fdf6ee;">
                 <img
@@ -68,6 +68,11 @@
 
 {% block scripts %}
 <script>
+    console.log(sessionStorage.getItem("skill"));
+    if(sessionStorage.getItem("skill") == null) {
+      alert("Please select a skill.");
+      document.location.href = "/skill";
+    }
     function selection(clicked) {
         // var url = "wheel3.php?issue=" + clicked;
         // document.location.href = url;

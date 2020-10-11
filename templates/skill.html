@@ -20,29 +20,29 @@
     <p class="lead text-center mt-3">Please select a <strong>skill</strong> that is most relevant to you.</p>
     <form action="issue.html" method="get">
         <div class="btn-group-vertical mt-10" style="width:100%">
-            <button id="social" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Social" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Social</h4>
                 <p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="creative" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Creative" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Creative</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="business" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Business" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Business</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="leadership" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Leadership" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Leadership</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
-            <button id="technology" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Technology" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
                 <h4 class="display-5">Technology</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </button>
         </div>
     </form>
-    <div class="row">
+    <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
             <button onclick="window.location.href='/interest'" style="border: none;background-color: #fdf6ee;">
                 <img
@@ -67,6 +67,11 @@
 
 {% block scripts %}
 <script>
+    console.log(sessionStorage.getItem("interest"));
+    if(sessionStorage.getItem("interest") == null) {
+      alert("Please select an interest.");
+      document.location.href = "/interest";
+    }
     function selection(clicked) {
         // var url = "wheel3.php?skill=" + clicked;
         // document.location.href = url;
