@@ -28,7 +28,7 @@ block content %}
       <img
         id="chosen-avatar-img"
         width="300px"
-        src="../static/img/avatar-1.svg"
+        src="../static/img/avatar-faces/avatar-1.svg"
         
       />
     </div>
@@ -78,7 +78,7 @@ block content %}
   var avatar = sessionStorage.getItem("chosen-avatar");
   if (avatar != "") {
     console.log(avatar);
-    document.getElementById("chosen-avatar-img").src = "../static/img/" + avatar + ".svg"
+    document.getElementById("chosen-avatar-img").src = "../static/img/avatar-faces/" + avatar + ".svg"
   }
 </script>
 {% endblock %}
