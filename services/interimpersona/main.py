@@ -105,5 +105,42 @@ def get_campus_activities_by_wheel(issue, skill, interest):
     except Exception as e:
         print(e)
         return {"error": "Cannot retrieve interim personas"}, 500
+
+@app.route("/get_interim_persona_by_wheel/<string:issue>/<string:skill>/<string:interest>")
+def get_interim_persona_by_wheel(issue, skill, interest):
+    interim_ref = db.collection(u"InterimPersona")
+    docs = interim_ref.where("issues", "==", issue).where("skills", "==", skill).where("interests", "==", interest).stream()
+
+    try:
+        activities = ""
+        for doc in docs:
+            activities = doc.to_dict()["persona"]
+
+        return {
+            'persona': activities
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error": "Cannot retrieve interim personas"}, 500
+
+@app.route("/get_by_wheel/<string:issue>/<string:skill>/<string:interest>")
+def get_by_wheel(issue, skill, interest):
+    interim_ref = db.collection(u"InterimPersona")
+    docs = interim_ref.where("issues", "==", issue).where("skills", "==", skill).where("interests", "==", interest).stream()
+
+    try:
+        activities = ""
+        for doc in docs:
+            activities = doc.to_dict()
+
+        return {
+            'data': activities
+        }, 200
+    except Exception as e:
+        print(e)
+        return {"error": "Cannot retrieve interim personas"}, 500
+
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)
