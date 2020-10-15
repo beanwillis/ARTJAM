@@ -6,6 +6,7 @@
 
   async function start() {
     var url = "http://interimpersona.artjam-287602.et.r.appspot.com/get_campus_activities_by_wheel/" + issue + "/" + skill + "/" + interest;
+    console.log(url)
     var response = await fetch(url);
     var data = await response.json();
     var activities = data["schoolActivities"];

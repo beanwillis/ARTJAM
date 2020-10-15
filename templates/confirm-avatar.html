@@ -76,9 +76,9 @@ block content %}
   document.getElementById("avatar-name").innerText = name;
 
   var avatar = sessionStorage.getItem("chosen-avatar");
+  var skin = sessionStorage.getItem("chosen-skin");
   if (avatar != "") {
-    console.log(avatar);
-    document.getElementById("chosen-avatar-img").src = "../static/img/avatar-faces/" + avatar + ".svg"
+    document.getElementById("chosen-avatar-img").src = "../static/img/avatar-faces/" + avatar + "-" + skin + ".svg"
   }
 </script>
 {% endblock %}

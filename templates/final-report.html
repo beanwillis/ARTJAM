@@ -63,8 +63,9 @@
 {% block scripts %}
 <script>
     var chosen = sessionStorage.getItem("chosen-avatar");
+    var skin = sessionStorage.getItem("chosen-skin");
     var persona = "CEO"
-    var new_img = "/static/img/avatar-bodies/" + chosen + "-" + persona + ".svg"
+    var new_img = "/static/img/avatar-bodies/" + chosen + "-" + persona + "-"+ skin +".svg"
     console.log(document.getElementById("chosen-img").src)
     
     document.getElementById("chosen-img").src = new_img;

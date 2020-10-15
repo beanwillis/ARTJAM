@@ -27,7 +27,7 @@ block content %}
   </div>
   <!-- <div class="row bg-light-blue" style="margin-top: -20px;">
             <div class="col padding-0" align="center" id="image-choice">
-                <img width="250px" src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}">
+                <img width="250px" src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}">
             </div>
         </div> -->
 
@@ -40,26 +40,30 @@ block content %}
     <div class="carousel-inner">
       <div class="carousel-item active image-choice" align="center">
         <img
+          id="skin-1"
           width="250px"
-          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}"
         />
       </div>
       <div class="carousel-item image-choice" align="center">
         <img
+          id="skin-2"
           width="250px"
-          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}"
         />
       </div>
       <div class="carousel-item image-choice" align="center">
         <img
+          id="skin-3"
           width="250px"
-          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}"
         />
       </div>
       <div class="carousel-item image-choice" align="center">
         <img
+          id="skin-4"
           width="250px"
-          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+          src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}"
         />
       </div>
     </div>
@@ -97,7 +101,7 @@ block content %}
         <button id="avatar-1" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -105,7 +109,7 @@ block content %}
         <button id="avatar-2" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-2.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-2-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -113,7 +117,7 @@ block content %}
         <button id="avatar-3" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-3.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-3-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -124,7 +128,7 @@ block content %}
         <button id="avatar-4" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-4.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-4-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -132,7 +136,7 @@ block content %}
         <button id="avatar-5" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-5-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -140,7 +144,7 @@ block content %}
         <button id="avatar-6" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-6-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -151,7 +155,7 @@ block content %}
         <button id="avatar-7" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-4.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-7-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -159,7 +163,7 @@ block content %}
         <button id="avatar-8" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-8-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -167,7 +171,7 @@ block content %}
         <button id="avatar-9" class="avatar-btn">
           <img
             class="avatar-img"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-9-skin-1.svg') }}"
           />
         </button>
       </div>
@@ -188,12 +192,12 @@ block content %}
           <img
             class="avatar-img"
             style="margin-top: -20%"
-            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-1.svg') }}"
+            src=" {{ url_for('static', filename = 'img/avatar-faces/avatar-10-skin-1.svg') }}"
           />
         </button>
       </div>
       <div class="col padding-0" align="center">
-        <button onclick="window.location.href='/confirm-avatar'">
+        <button id="confirm">
           <img
             width="85%"
             style="margin-left: 15%; margin-top: -20%"
@@ -207,12 +211,11 @@ block content %}
 
 {% endblock %} {% block scripts %}
 <script>
-  $(function () {
-    $("#skin-tones").bind("focusin", function () {
-      var focused_btn = $(":focus");
-      console.log(focused_btn);
-    });
-  });
+
+  $("#confirm").on("click", function() {
+    sessionStorage.setItem("chosen-skin", $(".active").find("img")[0].id);
+    window.location.href='/confirm-avatar'
+  })
 
   $(function () {
     $("#avatars").bind("focusin", function () {
@@ -220,8 +223,9 @@ block content %}
       if (focused_btn.attr("class") !== undefined) {
         $(".image-choice")
           .find("img")
-          .each(function (element) {
-            $(this)[0].src = focused_btn.find("img")[0].src;
+          .each(function (index, element) {
+            var len = focused_btn.find("img")[0].src.length
+            $(this)[0].src = focused_btn.find("img")[0].src.substr(0, len - 5) + (index + 1) + ".svg";
             sessionStorage.setItem("chosen-avatar", focused_btn[0].id);
           });
       }
