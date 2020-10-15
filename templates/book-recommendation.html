@@ -62,9 +62,9 @@
   };
 
   $(async() => {
-      // var finalpersona = sessionStorage.getItem("finalpersona");
-      var mockFinalPersona = "App Developer"
-      var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_books_by_final_persona/" + mockFinalPersona);
+      var finalpersona = sessionStorage.getItem("finalpersona");
+      // var mockFinalPersona = "CEO"
+      var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_books_by_final_persona/" + finalpersona);
       var data = await response.json();
       var books = data["books"]
 
