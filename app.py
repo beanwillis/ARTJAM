@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect
 from flask_cors import CORS
 
-# from services.emailer import sendReport
+from services.emailer import sendReport
 
 app = Flask(__name__)
 
@@ -34,6 +34,10 @@ def books():
 @app.route("/specificBook")
 def specificBook():
     return render_template("specific-book.html")
+
+@app.route("/specific-book-recommendation")
+def specificBookRecommendation():
+    return render_template("specific-book-recommendation.html")
 
 @app.route("/avatar")
 def avatar():
