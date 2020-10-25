@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect
 from flask_cors import CORS
 
-# from services.emailer import sendReport
+from services.emailer import sendReport
 
 app = Flask(__name__)
 
