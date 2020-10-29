@@ -1,61 +1,61 @@
-
 {% extends "layout.html" %}
 {% block title %}Final Report{% endblock %}
 
 {% block content %}
 
 
-    <div class="container bg-beige full-height">
+<div class="container bg-beige full-height">
 
-        <br>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">
-            </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
         </div>
-        <br>
-
-        <div id="" class="container text-center">
-            <h2 class="bg-orange text-white">
-                Your Changemaking Persona is 
-            <h2 id="finalpersona" class="bg-light-green text-white"></h2>
-                
-            </h2>
-            <br>
-        </div>
-        <div id="report-face" class="">
-            <div class="row bg-light-blue" style="margin-top: -20px;">
-                <div class="col padding-0 image-choice" align="center" >
-              
-              <img id="chosen-img" style="position: relative; z-index: 1000;">
-              <img style="position:absolute; left: -0px;top: -50px; width: 100%;" src="{{ url_for('static', filename = 'img/backgrounds/report-bg.svg') }}">
-                </div>
-            </div>
-        </div>
-
-        <div id="personaTitle" class="container text-center">
-            
-            <div class="text-center">
-                <p id="finalpersonaDesc"></p>
-            </div>
-        </div>
-
-        <br>
-        <div class="row">
-            <div class="col">
-                <a href="/ascend">
-                    <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/misc/back.svg">
-                </a>
-
-            </div>
-            <div class="col">
-                <a href="/skill-recommendation">
-                    <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/misc/next.svg">
-                </a>
-            </div>
-        </div>
-
     </div>
+    <br>
+
+    <div id="" class="container text-center">
+        <h2 class="bg-orange text-white">
+            Your Changemaking Persona is
+            <h2 id="finalpersona" class="bg-light-green text-white"></h2>
+
+        </h2>
+        <br>
+    </div>
+    <div id="report-face" class="">
+        <div class="row bg-light-blue" style="margin-top: -20px;">
+            <div class="col padding-0 image-choice" align="center">
+
+                <img id="chosen-img" style="position: relative; z-index: 1000;">
+                <img style="position:absolute; left: -0px;top: -50px; width: 100%;"
+                    src="{{ url_for('static', filename = 'img/backgrounds/report-bg.svg') }}">
+            </div>
+        </div>
+    </div>
+
+    <div id="personaTitle" class="container text-center">
+
+        <div class="text-center">
+            <p id="finalpersonaDesc"></p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col">
+            <a href="/ascend">
+                <img style="width: 90px; float: left; margin-left: 30px;" src="../static/img/misc/back.svg">
+            </a>
+
+        </div>
+        <div class="col">
+            <a href="/skill-recommendation">
+                <img style="width: 90px; float: right; margin-right: 30px;" src="../static/img/misc/next.svg">
+            </a>
+        </div>
+    </div>
+
+</div>
 
 {% endblock %}
 
@@ -65,35 +65,35 @@
     var chosen = sessionStorage.getItem("chosen-avatar");
     var skin = sessionStorage.getItem("chosen-skin");
     var persona = "CEO"
-    var new_img = "/static/img/avatar-bodies/" + chosen + "-" + persona + "-"+ skin +".svg"
+    var new_img = "/static/img/avatar-bodies/" + chosen + "-" + persona + "-" + skin + ".svg"
     console.log(document.getElementById("chosen-img").src)
-    
+
     document.getElementById("chosen-img").src = new_img;
 
 
 
-    $(async() => {
-        // var interimPersona = sessionStorage.getItem("interimPersona");
+    $(async () => {
+        var interimPersona = sessionStorage.getItem("interimPersona");
         // console.log(interimPersona);
 
-        // var iLikeTo = sessionStorage.getItem("iLikeTo");
+        var iLikeTo = sessionStorage.getItem("iLikeTo");
         // console.log(iLikeTo);
-        var mockInterimPersona = "Leadership"
-        var mockILikeTo = "I like to set goals and directions"
+        // var mockInterimPersona = "Leadership"
+        // var mockILikeTo = "I like to set goals and directions"
         // http://finalpersona.artjam-287602.et.r.appspot.com/get_final_persona/Tech/I like to generate solutions to problems
-        var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_final_persona/" + mockInterimPersona + "/" + mockILikeTo)
+        var response = await fetch("http://finalpersona.artjam-287602.et.r.appspot.com/get_final_persona/" + interimPersona + "/" + iLikeTo)
         var data = await response.json();
-        
+
         var finalpersona = data["data"]["finalPersona"];
         sessionStorage.setItem("finalpersona", finalpersona);
         var finalpersonaDesc = data["data"]["description"];
-        
+
         $("#finalpersona").append(finalpersona);
         $("#finalpersonaDesc").append(finalpersonaDesc);
 
     });
 
 
-    
+
 </script>
 {% endblock %}
