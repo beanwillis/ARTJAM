@@ -6,3 +6,6 @@ services/finalpersona/artjam-287602-c4a440e2da91.json
 services/interimpersona/artjam-287602-c4a440e2da91.json
 try.html
 services/config.py
+services/artjam-287602-c4a440e2da91.json
+services/__pycache__/config.cpython-38.pyc
+services/__pycache__/emailer.cpython-38.pyc
