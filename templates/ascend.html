@@ -7,13 +7,35 @@
 </script>
 {% endblock %}
 
+{% block style %}
+<style>
+  @media (min-width: 426px) and (max-width: 768px) {
+    #ascend {
+      max-width: 60vw;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    #ascend {
+      max-width: 50vw;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    #ascend {
+      max-width: 40vw;
+    }
+  }
+</style>
+{% endblock %}
+
 {% extends "layout.html" %} {% block title %}End of Quiz{% endblock %}
 {% block content %}
-<div class="container">
+<div class="container" id="ascend">
     <img src='../static/img/stations/ascend.svg' style="width:100%;display: block;margin-left:auto;margin-right:auto;margin-top:60px;"/>
     <p class="header text-center mt-4 mb-4" style="font-size:26px;"><strong>CONGRATULATIONS!</strong></p>
     <p class="text-center mb-4" style="font-size:18px">Now you're ready to take the next step on your changemaking journey.</p>
-    <p class="text-center" style="font-size:15px"><strong>Click next to view your report</strong></p>
+    <p class="text-center mb-4" style="font-size:18px">Click Next to view your report</p>
     <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
             <button onclick="window.location.href='/digging-deeper'" style="border: none;background-color: #fdf6ee;">

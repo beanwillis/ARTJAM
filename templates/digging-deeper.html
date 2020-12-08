@@ -59,6 +59,28 @@
 </script>
 {% endblock %}
 
+{% block style %}
+<style>
+  @media (min-width: 426px) and (max-width: 768px) {
+    #digging-deeper {
+      max-width: 60vw;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    #digging-deeper {
+      max-width: 50vw;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    #digging-deeper {
+      max-width: 40vw;
+    }
+  }
+</style>
+{% endblock %}
+
 {% extends "layout.html" %} {% block title %}Digging Deeper{% endblock %} {%
 block content %}
 <div class="container mt-4">
@@ -68,7 +90,8 @@ block content %}
     <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
     <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
-
+</div>
+<div class="container mt-4" id="digging-deeper">
   <h2 class="text-center display-5 mt-3 mb-3">Digging Deeper</h2>
   <img style="width: 100%;" src="{{ url_for('static', filename = 'img/stations/digging-deeper.svg') }}" />
   <p class="display-5 mt-3 mb-4 text-center">Everyone has different approaches toward life. What's your favorite?</p>

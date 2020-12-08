@@ -11,50 +11,49 @@
     
     <title>Welcome</title>
     <style>
-
-        @keyframes nextStation {
-            30% {
-                background-position: -500px;
-                background-size: 450%;
-            }
-
-            100% {
-                background-position: -500px;
-                background-size: 450%;
-            }
+      @keyframes nextStation {
+        30% {
+          background-position: -500px;
+          background-size: 450%;
         }
 
-        body{
-            /* Location of the image */
-            background-image: url(/static/img/backgrounds/map.png);
-        
-            /* Image is centered vertically and horizontally at all times */
-            background-position: top left;
-
-            animation: nextStation 4.5s;
-        
-            /* Image doesn't repeat */
-            background-repeat: no-repeat;
-        
-            /* Makes the image fixed in the viewport so that it doesn't move when 
-                the content height is greater than the image height */
-            background-attachment: fixed;
-        
-            /* This is what makes the background image rescale based on its container's size */
-            background-size: 300%;
-        
-            /* Pick a solid background color that will be displayed while the background image is loading */
-            background-color: white;
-        
-            height: 200%;
+        100% {
+          background-position: -500px;
+          background-size: 450%;
         }
+      }
+
+      body{
+        /* Location of the image */
+        background-image: url(/static/img/backgrounds/map.png);
+    
+        /* Image is centered vertically and horizontally at all times */
+        background-position: top left;
+
+        animation: nextStation 4.5s;
+    
+        /* Image doesn't repeat */
+        background-repeat: no-repeat;
+    
+        /* Makes the image fixed in the viewport so that it doesn't move when 
+            the content height is greater than the image height */
+        background-attachment: fixed;
+    
+        /* This is what makes the background image rescale based on its container's size */
+        background-size: 300%;
+    
+        /* Pick a solid background color that will be displayed while the background image is loading */
+        background-color: white;
+    
+        height: 200%;
+      }
         
     </style>
 
     <script>
-        setTimeout(function() {
-            window.location.href="/digging-deeper"
-        }, 2000);
+      setTimeout(function() {
+        window.location.href="/digging-deeper"
+    }, 2000);
     </script>
   </head>
   
@@ -92,7 +91,7 @@
     <script>
       $(document).ready(function() {
         if ($(window).width() > 700) {
-          window.location = "/laptop-home"
+          // window.location = "/laptop-home"
         }
       });
     </script>

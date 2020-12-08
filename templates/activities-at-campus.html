@@ -25,6 +25,28 @@
 </script>
 {% endblock %}
 
+{% block style %}
+<style>
+  @media (min-width: 426px) and (max-width: 768px) {
+    #campus-activities {
+      max-width: 60vw;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    #campus-activities {
+      max-width: 50vw;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    #campus-activities {
+      max-width: 40vw;
+    }
+  }
+</style>
+{% endblock %}
+
 {% extends "layout.html" %} {% block title %}Activities on Campus{% endblock %}
 {% block content %}
 <div class="container mt-4">
@@ -34,7 +56,8 @@
     <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
     <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
-  
+</div>
+<div class="container mt-4" id="campus-activities">  
   <!-- CAROUSEL -->
   <!-- <div
     id="carouselControls"
