@@ -27,6 +27,33 @@
 
 {% block style %}
 <style>
+  .glyphicon {
+    font-size:20px;
+  }
+  
+  .progress-bar {
+    width: 25%;
+  }
+  
+  .campus-img {
+    width: 100%;
+  }
+  
+  #button1, #button2, #button3, #button4 {
+    background-color: #4a8bae;
+    font-size: 20px;
+  }
+  
+  .back-next-button {
+    border: none;
+    background-color: #fdf6ee;
+  }
+  
+  .back-next-img {
+    margin-top: 5px;
+    margin-bottom: 20px
+  }
+  
   @media (min-width: 426px) and (max-width: 768px) {
     #campus-activities {
       max-width: 60vw;
@@ -50,11 +77,11 @@
 {% extends "layout.html" %} {% block title %}Activities on Campus{% endblock %}
 {% block content %}
 <div class="container mt-4">
-  <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
+  <span class="glyphicon glyphicon-home"></span>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
 </div>
 <div class="container mt-4" id="campus-activities">  
@@ -104,14 +131,14 @@
       <span class="sr-only">Next</span>
     </a>
   </div> -->
-  <img style="width: 100%;" src="{{ url_for('static', filename = 'img/stations/campus.svg') }}" />
+  <img class="campus-img" src="{{ url_for('static', filename = 'img/stations/campus.svg') }}" />
   <!-- <br /><br /><br /><br /><br /><br /><br /><br/> -->
   <div class="container mb-3">
     <h4 class="text-center mb-4">Activities on Campus</h4>
-    <button type="button" id="button1" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal1" style="background-color: #4a8bae;font-size: 20px;"></button>
-    <button type="button" id="button2" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal2" style="background-color: #4a8bae;font-size: 20px;"></button>
-    <button type="button" id="button3" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3" style="background-color: #4a8bae;font-size: 20px;"></button>
-    <button type="button" id="button4" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3" style="background-color: #4a8bae;font-size: 20px;"></button>
+    <button type="button" id="button1" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal1"></button>
+    <button type="button" id="button2" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal2"></button>
+    <button type="button" id="button3" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3"></button>
+    <button type="button" id="button4" class="btn-block text-white btn pt-3 pb-3 mb-3" data-toggle="modal" data-target="#modal3"></button>
   </div>
   
   <!-- Modal -->
@@ -178,19 +205,19 @@
 
   <div class="row ml-1 mr-1">
     <div class="col padding-0" align="left">
-        <button onclick="window.location.href='/home-activities'" style="border: none;background-color: #fdf6ee;">
+        <button class="back-next-button" onclick="window.location.href='/home-activities'">
           <img
+          class="back-next-img"
           width="50px"
-          style="margin-top: 5px; margin-bottom: 20px"
           src="../static/img/misc/back.svg"
           />
         </button>
     </div>
     <div class="col padding-0" align="right">
-        <button onclick="window.location.href='/map'" style="border: none;background-color: #fdf6ee;">
+        <button class="back-next-button" onclick="window.location.href='/map'">
             <img
+            class="back-next-img"
             width="50px"
-            style="margin-top: 5px; margin-bottom: 20px"
             src="../static/img/misc/next.svg"
             />
         </button>
