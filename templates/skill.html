@@ -7,6 +7,34 @@
         border: none;
     }
 
+    .glyphicon {
+        font-size:20px;
+    }
+
+    .progress-bar {
+        width: 25%
+    }
+
+    .btn-group-vertical {
+        width: 100%
+    }
+
+    .option {
+        background-color: #4a8bae;
+        white-space: normal;
+    }
+
+    .back-next-button {
+        border: none;
+        background-color: #fdf6ee;
+    }
+
+    .back-next-img {
+        margin-left: 15%;
+        margin-top: 5px;
+        margin-bottom: 20px
+    }
+
     @media (min-width: 426px) and (max-width: 768px) {
         #skill-options {
             max-width: 60vw;
@@ -30,32 +58,33 @@
 {% extends "layout.html" %} {% block title %}Skill{% endblock %}
 {% block content %}
 <div class="container mt-4">
-    <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
+    <span class="glyphicon glyphicon-home"></span>
     <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
 </div>
 <div class="container mt-4" id="skill-options">
     <p class="lead text-center mt-3">Please select a <strong>skill</strong> that is most relevant to you.</p>
     <form action="issue.html" method="get">
-        <div class="btn-group-vertical mt-10" style="width:100%">
-            <button id="Social" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+        <div class="btn-group-vertical mt-10">
+            <button id="Social" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Social</h4>
                 <p class="mb-2 font-weight-normal">Skills we use to communicate and interact with each other</p>
             </button>
-            <button id="Creative" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Creative" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Creative</h4>
                 <p class="mb-2 font-weight-normal">Ability to think about a task or a problem in a new or different way</p>
             </button>
-            <button id="Business" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Business" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Business</h4>
                 <p class="mb-2 font-weight-normal">Seeing the big picture of organizational and consumer behavior</p>
             </button>
-            <button id="Leadership" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Leadership" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Leadership</h4>
                 <p class="mb-2 font-weight-normal">Skills you use when organizing other people to reach a shared goal</p>
             </button>
-            <button id="Technology" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Technology" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Technology</h4>
                 <p class="mb-2 font-weight-normal">sets of abilities or knowledge used to perform practical tasks in information technology</p>
             </button>
@@ -63,19 +92,19 @@
     </form>
     <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
-            <button onclick="window.location.href='/interest'" style="border: none;background-color: #fdf6ee;">
+            <button class="back-next-button" onclick="window.location.href='/interest'">
                 <img
+                class="back-next-img"
                 width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
                 src="../static/img/misc/back.svg"
                 />
             </button>
         </div>
         <div class="col padding-0" align="right">
-            <button onclick="window.location.href='/issue'" style="border: none;background-color: #fdf6ee;">
+            <button class="back-next-button" onclick="window.location.href='/issue'">
                 <img
+                class="back-next-img"
                 width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
                 src="../static/img/misc/next.svg"
                 />
             </button>

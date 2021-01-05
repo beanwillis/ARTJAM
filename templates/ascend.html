@@ -9,6 +9,32 @@
 
 {% block style %}
 <style>
+  .ascend-img {
+    width:100%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:60px;
+  }
+
+  .header {
+    font-size: 26px;
+  }
+
+  .para {
+    font-size: 18px;
+  }
+
+  .back-next-img {
+    margin-top: 5px;
+    margin-bottom: 20px
+  }
+
+  .back-next-button {
+    border: none;
+    background-color: #fdf6ee;
+  }
+
   @media (min-width: 426px) and (max-width: 768px) {
     #ascend {
       max-width: 60vw;
@@ -32,27 +58,27 @@
 {% extends "layout.html" %} {% block title %}End of Quiz{% endblock %}
 {% block content %}
 <div class="container" id="ascend">
-    <img src='../static/img/stations/ascend.svg' style="width:100%;display: block;margin-left:auto;margin-right:auto;margin-top:60px;"/>
-    <p class="header text-center mt-4 mb-4" style="font-size:26px;"><strong>CONGRATULATIONS!</strong></p>
-    <p class="text-center mb-4" style="font-size:18px">Now you're ready to take the next step on your changemaking journey.</p>
-    <p class="text-center mb-4" style="font-size:18px">Click Next to view your report</p>
+    <img class="ascend-img" src='../static/img/stations/ascend.svg' />
+    <p class="header text-center mt-4 mb-4"><strong>CONGRATULATIONS!</strong></p>
+    <p class="text-center mb-4 para">Now you're ready to take the next step on your changemaking journey.</p>
+    <p class="text-center mb-4 para">Click Next to view your report</p>
     <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
-            <button onclick="window.location.href='/digging-deeper'" style="border: none;background-color: #fdf6ee;">
-                <img
-                width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
-                src="../static/img/misc/back.svg"
-                />
+            <button class="back-next-button" onclick="window.location.href='/digging-deeper'">
+              <img
+              class="back-next-img"
+              width="50px"
+              src="../static/img/misc/back.svg"
+              />
             </button>
         </div>
         <div class="col padding-0" align="right">
-            <button onclick="window.location.href='/final-report'" style="border: none;background-color: #fdf6ee;">
-                <img
-                width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
-                src="../static/img/misc/next.svg"
-                />
+            <button class="back-next-button" onclick="window.location.href='/final-report'">
+              <img
+              class="back-next-img"
+              width="50px"
+              src="../static/img/misc/next.svg"
+              />
             </button>
         </div>
     </div>

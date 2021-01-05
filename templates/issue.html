@@ -7,6 +7,34 @@
         border: none;
     }
 
+    .glyphicon {
+        font-size:20px;
+    }
+
+    .progress-bar {
+        width: 25%
+    }
+
+    .btn-group-vertical {
+        width: 100%
+    }
+
+    .option {
+        background-color: #4a8bae;
+        white-space: normal;
+    }
+
+    .back-next-button {
+        border: none;
+        background-color: #fdf6ee;
+    }
+
+    .back-next-img {
+        margin-left: 15%;
+        margin-top: 5px;
+        margin-bottom: 20px
+    }
+
     @media (min-width: 426px) and (max-width: 768px) {
         #issue-options {
             max-width: 60vw;
@@ -30,34 +58,34 @@
 {% extends "layout.html" %} {% block title %}Issue{% endblock %}
 {% block content %}
 <div class="container mt-4">
-    <span class="glyphicon glyphicon-home" style="font-size:20px;"></span>
+    <span class="glyphicon glyphicon-home"></span>
     <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
 </div>
 <div class="container mt-4" id="issue-options">
     <p class="lead text-center mt-3">Please select an <strong>issue</strong> that is most relevant to you.</p>
     <form action="activities-at-home.html" method="get">
-        <div class="btn-group-vertical mt-10" style="width:100%">
-            <button id="Education And Mobility" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+        <div class="btn-group-vertical mt-10">
+            <button id="Education And Mobility" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Education & Mobility</h4>
                 <p class="mb-2 font-weight-normal">Everyone should have an equal opportunity to learn and pursue what they want to</p>
             </button>
-            <button id="Equality and Diversity" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Equality and Diversity" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Equality & Diversity</h4>
                 <p class="mb-2 font-weight-normal">Let's build a society where everyone has an equal opportunities to fulfil our potential</p>
             </button>
-            <button id="Environment And Sustainability" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Environment And Sustainability" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Environment & Sustainability</h4>
                 <p class="mb-2 font-weight-normal">The natural ecosystem is crucial to those living on Earth - let us preserve our only home.</p>
             </button>
-            <button id="Health and Well-Being" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Health and Well-Being" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Health & Wellbeing</h4>
                 <p class="mb-2 font-weight-normal">Let's take great care of the physical, mental, emotional, and social aspects of our lives.</p>
             </button>
-            <button id="Cyberspace" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3" style="background-color: #4a8bae;white-space: normal;">
+            <button id="Cyberspace" onClick="selection(this.id)" type="button" class="btn btn-secondary mb-3 option">
                 <h4 class="display-5 pt-2">Cybersecurity</h4>
                 <p class="mb-2 font-weight-normal">Let's make sure we can create safe online spaces for people to connect and share information.</p>
             </button>
@@ -65,19 +93,19 @@
     </form>
     <div class="row ml-1 mr-1">
         <div class="col padding-0" align="left">
-            <button onclick="window.location.href='/skill'" style="border: none;background-color: #fdf6ee;">
+            <button class="back-next-button" onclick="window.location.href='/skill'">
                 <img
+                class="back-next-img"
                 width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
                 src="../static/img/misc/back.svg"
                 />
             </button>
         </div>
         <div class="col padding-0" align="right">
-            <button onclick="window.location.href='/home-activities'" style="border: none;background-color: #fdf6ee;">
+            <button class="back-next-button" onclick="window.location.href='/home-activities'">
                 <img
+                class="back-next-img"
                 width="50px"
-                style="margin-top: 5px; margin-bottom: 20px"
                 src="../static/img/misc/next.svg"
                 />
             </button>
