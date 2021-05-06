@@ -9,7 +9,7 @@ click==7.1.2
 docutils==0.15.2
 firebase-admin==4.4.0
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-Limiter==1.4
 Flask-SQLAlchemy==2.4.1
 google-api-core==1.23.0
